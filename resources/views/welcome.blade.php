@@ -1,45 +1,160 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Laravel</title>
+@extends('layouts.master')
 
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+@section('title', 'Web at Speed')
 
-        <style>
-            html, body {
-                height: 100%;
-            }
+@section('content')
+    <div class="site-index">
 
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
+        <div class="body-content">
 
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
+            <div class="row">
+                <div class="col-lg-12">
 
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h2>Software Development for Hire</h2>
+                                <p>
+                                    When it comes to web projects, saving time is often a key factor. We provide software
+                                    development in the web field ranging from simple support through to overall project
+                                    management. In addition, this requires a thoughtful choice of technology. We specialize
+                                    in PHP, Java, Grails and Angular.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-            .title {
-                font-size: 96px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">Laravel 5</div>
+                </div>
             </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 text-center">
+                                <h2>Initiate Your Startup's Technology</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                Berlin has a vibrant startup community. Owing to their potential for growth, large
+                                companies are often on the lookout to benefit from startups. We have experience handling
+                                projects, whatever the size of the company, to ensure a dynamic internet environment.
+                            </div>
+                            <div class="col-lg-6">
+                                {!! Html::image('img/car.jpg') !!}
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h2>Multiple Devices</h2>
+                                <p>
+                                    Modern technology has brought us a wide range of devices: desktop computers, smart
+                                    phones, tablets with varying functions and utilizing different technology, often
+                                    involving great expense. We provide solutions that can be scaled over various devices
+                                    saving you time all the while ensuring that the features remain uncompromised.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h2>Usability and Front-Ends</h2>
+                                <p>
+                                    Developers are frequently asked this common question, "Do you do front-end or back-end?"
+                                    Our answer is, “Both!” In the back-end you find the complexity of the application while
+                                    the front-end is the interface to the user. The whole system exists to assist and to
+                                    extend user-friendliness. That's why no aspect can be neglected.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="container">
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h2>Customers</h2>
+                                <p>
+                                    We have successfully worked together with Torsten for the last years. In different
+                                    projects he took roles as requirements engineer, software architect or senior developer.
+                                    He was always very reliable, fast and produced excellent results.<br/>
+                                    Dr. Lars Fink,
+                                    Managing Director at next level
+                                </p>
+                                <p>
+                                    Meeting the delivery date and the budget we completely rely on Torsten.<br/>
+                                    Dennis Kämker,
+                                    Managing Director at Club Family
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h2>Headhunters</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat nulla pariatur.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h2>Contact Us</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat nulla pariatur.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
-    </body>
-</html>
+    </div>
+@endsection
