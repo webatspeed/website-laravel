@@ -1,3 +1,7 @@
+$font-family-sans-serif: sans-serif;
+$font-size-base: 19px;
+$headings-font-weight: 300;
+
 @import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
 
 // http://www.colourlovers.com/palette/580974/Adrift_in_Dreams
@@ -9,17 +13,13 @@ $adrift-in-dreams: #0B486B;
 
 $adrift-in-dreams-light: #C0DBFD;
 
-body {
-
-}
-
 a {
   color: $adrift-in-dreams;
 }
 
 #splash {
   height: 500px;
-  background: #000 url('/img/potsdamerplatz.jpg') no-repeat center;
+  background: #000000 url('/img/potsdamerplatz.jpg') no-repeat center;
   margin-top: 50px;
   padding-top: 70px;
 
@@ -32,7 +32,7 @@ a {
 }
 
 .navbar {
-  background-color: #fff;
+  background-color: #f5f5f5;
   -webkit-box-shadow: 0 8px 8px rgba(0, 0, 0, 0.06);
   -moz-box-shadow: 0 8px 8px rgba(0, 0, 0, 0.06);
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.06);
@@ -46,15 +46,15 @@ a {
   .navbar-nav {
 
     li.active {
-      background-color: $adrift-in-dreams-light;
+      background-color: $sea-foaming;
     }
 
     li a {
-      color: $adrift-in-dreams;
+      color: #000000;
     }
 
     li a:hover {
-      background-color: $adrift-in-dreams-light
+      background-color: $sea-foaming
     }
   }
 }
@@ -64,7 +64,16 @@ a {
   padding: 70px 0 70px 0;
 }
 
+.row.darker {
+  background-color: #f5f5f5;
+}
+
+.row.colorful {
+  background: radial-gradient(circle at bottom right, $sunlit-sea 0, $there-we-could-sail 100%);
+  color: #FFFFFF;
+}
+
 .footer {
   height: 300px;
-  background-color: $sunlit-sea;
+  background-color: $adrift-in-dreams-light;
 }

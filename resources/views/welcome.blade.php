@@ -7,12 +7,12 @@
 
         <div class="body-content">
 
-            <div class="row">
+            <div class="row darker">
                 <div class="col-lg-12">
 
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-12">
+                            <div class="col-lg-12 text-center">
                                 <h2>Software Development for Hire</h2>
                                 <p>
                                     When it comes to web projects, saving time is often a key factor. We provide software
@@ -51,7 +51,7 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row darker">
                 <div class="col-lg-12">
 
                     <div class="container">
@@ -117,7 +117,7 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row colorful">
                 <div class="col-lg-12">
 
                     <div class="container">

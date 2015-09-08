@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>@yield('title')</title>
-        <link rel="stylesheet" type="text/css" href="{{ elixir("css/app.css") }}">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="msapplication-TileColor" content="#ffffff">
@@ -22,9 +21,38 @@
         <link rel="icon" type="image/png" sizes="96x96" href="{{ url("img/favicon/favicon-96x96.png") }}">
         <link rel="icon" type="image/png" sizes="16x16" href="{{ url("img/favicon/favicon-16x16.png") }}">
         <link rel="manifest" href="{{ url("img/favicon/manifest.json") }}">
+        <link rel="stylesheet" type="text/css" href="{{ elixir("css/app.css") }}">
+        <script src="{{ elixir("js/all.js") }}"></script>
     </head>
     <body>
         <div class="wrap">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Web at Speed</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Dev <span class="sr-only">(current)</span></a></li>
+                            <li><a href="#">Start-Up</a></li>
+                            <li><a href="#">Devices</a></li>
+                            <li><a href="#">Usability</a></li>
+                            <li><a href="#">Customers</a></li>
+                            <li><a href="#">Headhunters</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
             <div class="container-fluid text-center" id="splash">
                 {!! Html::image("img/logo_transparent.png") !!}<br/>
             </div>

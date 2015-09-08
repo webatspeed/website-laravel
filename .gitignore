@@ -12,3 +12,4 @@ composer.phar
 .vagrant
 /public/css
 /public/build
+/public/js
