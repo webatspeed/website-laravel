@@ -1,4 +1,12 @@
-/bootstrap/compiled.php
-.env.*.php
-.env.php
+/vendor
+/node_modules
+Homestead.yaml
+Homestead.json
 .env
+
+/bootstrap/compiled.php
+composer.phar
+.env.example
+.DS_Store
+/.idea
+.vagrant
