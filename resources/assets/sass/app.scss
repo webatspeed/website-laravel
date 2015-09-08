@@ -18,17 +18,10 @@ a {
 }
 
 #splash {
-  height: 500px;
+  height: 750px;
   background: #000000 url('/img/potsdamerplatz.jpg') no-repeat center;
   margin-top: 50px;
-  padding-top: 70px;
-
-  img {
-    background: rgba(0, 16, 40, 0.4);
-    -moz-border-radius: 20px;
-    border-radius: 20px;
-    padding: 15px;
-  }
+  padding-top: 50px;
 }
 
 .navbar {
