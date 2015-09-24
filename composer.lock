@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "649ad95ec8da5c42323d646182caf33e",
+    "hash": "32750c0530a879673ea99c535d89098a",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -59,6 +59,42 @@
                 "preload"
             ],
             "time": "2015-06-28 21:39:13"
+        },
+        {
+            "name": "components/animate.css",
+            "version": "3.3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/larakit/animate.css.git",
+                "reference": "b4e150bdcb635884e5691f61d86ce3a39935fda6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/larakit/animate.css/zipball/b4e150bdcb635884e5691f61d86ce3a39935fda6",
+                "reference": "b4e150bdcb635884e5691f61d86ce3a39935fda6",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Eden",
+                    "role": "authors"
+                },
+                {
+                    "name": "Alexey Berdnikov",
+                    "email": "aberdnikov@gmail.com",
+                    "role": "maintainer of package for composer"
+                }
+            ],
+            "description": "Just-add-water CSS animation",
+            "keywords": [
+                "Animate.css"
+            ],
+            "time": "2015-07-08 10:41:04"
         },
         {
             "name": "components/jquery",

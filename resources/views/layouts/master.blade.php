@@ -21,18 +21,20 @@
     <link rel="icon" type="image/png" sizes="96x96" href="{{ url("img/favicon/favicon-96x96.png") }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ url("img/favicon/favicon-16x16.png") }}">
     <link rel="manifest" href="{{ url("img/favicon/manifest.json") }}">
-    <link rel="stylesheet" type="text/css" href="{{ elixir("css/app.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ elixir("css/all.css") }}">
     <script src="{{ elixir("js/all.js") }}"></script>
 </head>
 <body>
+
 <svg class="hidden" xmlns="http://www.w3.org/2000/svg">
-    <symbol id="shapeLongArrow" viewBox="288.1 406.4 19 29">
+    <symbol id="shape-arrow" viewBox="288.1 406.4 19 29">
         <g>
-            <polygon class="st0" points="297.6,433.9 289.1,425.4 290.6,424 297.6,431 304.6,424 306,425.4  "></polygon>
-            <rect x="296.6" y="407.4" class="st0" width="2" height="23.9"></rect>
+            <polygon class="st0" points="297.6,433.9 289.1,425.4 290.6,424 297.6,431 304.6,424 306,425.4  "/>
+            <rect x="296.6" y="407.4" class="st0" width="2" height="23.9"/>
         </g>
     </symbol>
 </svg>
+
 <div class="wrap">
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -66,6 +68,11 @@
     </nav>
     <div class="container-fluid text-center" id="splash">
         {!! Html::image("img/logo_transparent.png") !!}<br/>
+        <a href="#" class="arrow bounce">
+            <svg>
+                <use xlink:href="#shape-arrow"></use>
+            </svg>
+        </a>
     </div>
     <div class="container-fluid">
         @yield('content')

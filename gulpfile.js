@@ -13,19 +13,27 @@ var elixir = require('laravel-elixir');
 
 var paths = {
     "jquery": '../../../vendor/components/jquery/',
-    "bootstrap": '../../../node_modules/bootstrap-sass/assets/'
+    "bootstrap": '../../../node_modules/bootstrap-sass/assets/',
+    "animate": '../../../vendor/components/animate.css/',
+    "css": '../../../public/css/'
 };
 
 elixir(function (mix) {
     mix
-        .sass('app.scss')
+        .sass([
+            'app.scss'
+        ])
+        .styles([
+            paths.animate + 'animate.css',
+            paths.css + 'app.css'
+        ])
         .scripts([
             'app.js',
             paths.jquery + 'jquery.min.js',
             paths.bootstrap + "javascripts/bootstrap.min.js"
         ])
         .version([
-            'css/app.css',
+            'css/all.css',
             'js/all.js'
         ]);
 });
