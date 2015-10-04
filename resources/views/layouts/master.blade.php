@@ -67,7 +67,10 @@
         <!-- /.container-fluid -->
     </nav>
     <div class="container-fluid text-center" id="splash">
-        {!! Html::image("img/logo_transparent.png") !!}<br/>
+        <span id="logo" class="animated bounceInDown">
+            {!! Html::image("img/logo_transparent.png") !!}
+        </span>
+        <br/>
         <a href="#" class="arrow bounce">
             <svg>
                 <use xlink:href="#shape-arrow"></use>

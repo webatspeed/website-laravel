@@ -17,6 +17,10 @@ a {
   color: $adrift-in-dreams;
 }
 
+#logo {
+  display: inline-block;
+}
+
 #splash {
   height: 750px;
   background: #000000 url('/img/potsdamerplatz.jpg') no-repeat center;

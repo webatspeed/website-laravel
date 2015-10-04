@@ -28,9 +28,9 @@ elixir(function (mix) {
             paths.css + 'app.css'
         ])
         .scripts([
-            'app.js',
             paths.jquery + 'jquery.min.js',
-            paths.bootstrap + "javascripts/bootstrap.min.js"
+            paths.bootstrap + "javascripts/bootstrap.min.js",
+            'app.js'
         ])
         .version([
             'css/all.css',
