@@ -27,10 +27,24 @@ a {
   margin-top: 50px;
   padding-top: 50px;
 
+  .arrow-up {
+    top: -75px;
+    position: relative;
+    left: 380px;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-duration: 2s;
+    -moz-animation-delay: 1s;
+    -o-animation-duration: 2s;
+    -o-animation-delay: 1s;
+  }
+
   .arrow {
     top: 200px;
     position: relative;
-    right: 420px;
+    right: 660px;
     -webkit-animation-duration: 3s;
     -o-animation-duration: 3s;
     animation-duration: 3s;

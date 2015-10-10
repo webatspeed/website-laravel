@@ -27,12 +27,27 @@
 <body>
 
 <svg class="hidden" xmlns="http://www.w3.org/2000/svg">
-    <symbol id="shape-arrow" viewBox="288.1 406.4 19 29">
+    <symbol id="shape-arrow-down" viewBox="288.1 406.4 19 29">
         <g>
-            <polygon class="st0" points="297.6,433.9 289.1,425.4 290.6,424 297.6,431 304.6,424 306,425.4  "/>
-            <rect x="296.6" y="407.4" class="st0" width="2" height="23.9"/>
+            <polygon class="st0" points="297.6,433.9 291.1,427.4 292.6,426 297.6,431 302.6,426 304,427.4  "/>
+            <rect x="296.6" y="401" class="st0" width="2" height="30"></rect>
         </g>
     </symbol>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="115"
+     viewBox="0 0 150 115" preserveAspectRatio="xMidYMid meet" class="hidden">
+    <g id="shape-arrow-up">
+        <rect id="svgEditorBackground" x="0" y="0" width="150" height="115" style="fill: none; stroke: none;"/>
+        <path d="M7.754236221313477,10.100153923034668a140.25564575195312,140.25564575195312,0,0,1,137.50384521484375,101.00154113769531"
+              stroke="#CFF09E" id="e5_circleArc"
+              style="fill: none; stroke-width: 3px; vector-effect: non-scaling-stroke;"/>
+        <line id="e6_line" x1="7.75423" y1="9.9229" x2="25.1194" y2="22.8582" stroke="#CFF09E"
+              style="stroke-width: 3px; vector-effect: non-scaling-stroke; fill: none;"/>
+        <line id="e7_line" x1="7.754236347686344" y1="10.100154083204933" x2="28.66332725677725"
+              y2="1.5947611710323581" stroke="#CFF09E"
+              style="stroke-width: 3px; vector-effect: non-scaling-stroke; fill: none;"/>
+    </g>
 </svg>
 
 <div class="wrap">
@@ -71,9 +86,12 @@
             {!! Html::image("img/logo_transparent.png") !!}
         </span>
         <br/>
+        <svg class="arrow-up animated fadeIn">
+            <use xlink:href="#shape-arrow-up"></use>
+        </svg>
         <a href="#" class="arrow bounce">
             <svg>
-                <use xlink:href="#shape-arrow"></use>
+                <use xlink:href="#shape-arrow-down"></use>
             </svg>
         </a>
     </div>
