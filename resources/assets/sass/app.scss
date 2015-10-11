@@ -1,8 +1,14 @@
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+@font-face {
+  font-family: 'chocolate-covered-raindrops';
+  src: url('/fonts/chocolate-covered-raindrops.ttf') format('truetype');
+}
+
 $font-family-sans-serif: sans-serif;
+$font-family-handwriting: 'chocolate-covered-raindrops';
 $font-size-base: 19px;
 $headings-font-weight: 300;
-
-@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
 
 // http://www.colourlovers.com/palette/580974/Adrift_in_Dreams
 $sunlit-sea: #CFF09E;
@@ -13,12 +19,43 @@ $adrift-in-dreams: #0B486B;
 
 $adrift-in-dreams-light: #C0DBFD;
 
+@mixin animation($delay, $duration, $iteration-count: infinite) {
+  -webkit-animation-delay: $delay;
+  -webkit-animation-duration: $duration;
+  -webkit-animation-iteration-count: $iteration-count;
+  -moz-animation-delay: $delay;
+  -moz-animation-duration: $duration;
+  -moz-animation-iteration-count: $iteration-count;
+  -o-animation-delay: $delay;
+  -o-animation-duration: $duration;
+  -o-animation-iteration-count: $iteration-count;
+  animation-delay: $delay;
+  animation-duration: $duration;
+  animation-iteration-count: $iteration-count;
+}
+
 a {
   color: $adrift-in-dreams;
 }
 
-#logo {
+.scribbled-note {
+  font-family: $font-family-handwriting;
+  color: $sunlit-sea;
+  font-size: 4rem;
+  line-height: normal;
   display: inline-block;
+}
+
+.rotate {
+  -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.delay-3 {
+  @include animation(3s,2s,1);
 }
 
 #splash {
@@ -28,34 +65,18 @@ a {
   padding-top: 50px;
 
   .arrow-up {
-    top: -75px;
-    position: relative;
-    left: 380px;
-    animation-duration: 2s;
-    animation-delay: 1s;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-delay: 1s;
-    -moz-animation-duration: 2s;
-    -moz-animation-delay: 1s;
-    -o-animation-duration: 2s;
-    -o-animation-delay: 1s;
+    margin-top: 100px;
+    @include animation(1s,2s,1);
+
+    svg {
+      width: 150px;
+      height: 115px;
+    }
   }
 
-  .arrow {
-    top: 200px;
-    position: relative;
-    right: 660px;
-    -webkit-animation-duration: 3s;
-    -o-animation-duration: 3s;
-    animation-duration: 3s;
-    -moz-animation-delay: 0s;
-    -webkit-animation-delay: 0s;
-    -o-animation-delay: 0s;
-    animation-delay: 0s;
-    -moz-animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
-    -o-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
+  .arrow-down {
+    margin-top: 100px;
+    @include animation(0,3s,infinite);
 
     svg {
       fill: $sunlit-sea;
@@ -112,6 +133,3 @@ a {
   background-color: $adrift-in-dreams-light;
 }
 
-svg:not(:root) {
-  overflow: hidden;
-}

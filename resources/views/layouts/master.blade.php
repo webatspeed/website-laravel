@@ -82,18 +82,36 @@
         <!-- /.container-fluid -->
     </nav>
     <div class="container-fluid text-center" id="splash">
-        <span id="logo" class="animated bounceInDown">
-            {!! Html::image("img/logo_transparent.png") !!}
-        </span>
-        <br/>
-        <svg class="arrow-up animated fadeIn">
-            <use xlink:href="#shape-arrow-up"></use>
-        </svg>
-        <a href="#" class="arrow bounce">
-            <svg>
-                <use xlink:href="#shape-arrow-down"></use>
-            </svg>
-        </a>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4 animated bounceInDown" id="logo">
+                {!! Html::image("img/logo_transparent.png") !!}
+            </div>
+            <div class="col-md-4 text-left arrow-up animated fadeIn">
+                <svg>
+                    <use xlink:href="#shape-arrow-up"></use>
+                </svg>
+                <br/>
+                <span class="scribbled-note rotate">
+                    A Faster Way for Your<br/>
+                    Web and Mobile Applications
+                </span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 animated fadeIn delay-3">
+                <div class="arrow-down bounce">
+                    <span class="scribbled-note">
+                        scroll down
+                    </span>
+                    <br/>
+                    <a href="#">
+                        <svg>
+                            <use xlink:href="#shape-arrow-down"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="container-fluid">
         @yield('content')

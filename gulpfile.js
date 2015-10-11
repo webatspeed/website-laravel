@@ -12,10 +12,12 @@ var elixir = require('laravel-elixir');
  */
 
 var paths = {
-    "jquery": '../../../vendor/components/jquery/',
-    "bootstrap": '../../../node_modules/bootstrap-sass/assets/',
-    "animate": '../../../vendor/components/animate.css/',
-    "css": '../../../public/css/'
+    "jquery": './vendor/components/jquery/',
+    "bootstrap": './node_modules/bootstrap-sass/assets/',
+    "animate": './vendor/components/animate.css/',
+    "css": './public/css/',
+    "fonts": './public/fonts/'
+    //http://bythebutterfly.com/shop.php
 };
 
 elixir(function (mix) {
@@ -29,9 +31,13 @@ elixir(function (mix) {
         ])
         .scripts([
             paths.jquery + 'jquery.min.js',
-            paths.bootstrap + "javascripts/bootstrap.min.js",
+            paths.bootstrap + 'javascripts/bootstrap.min.js',
             'app.js'
         ])
+        .copy(
+            './resources/assets/fonts',
+            paths.fonts
+        )
         .version([
             'css/all.css',
             'js/all.js'
