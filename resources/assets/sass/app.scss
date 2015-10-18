@@ -38,6 +38,18 @@ $black: #000;
   animation-iteration-count: $iteration-count;
 }
 
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+
 .wrap {
   width: 100%;
 }
@@ -115,9 +127,7 @@ a {
 
 .navbar {
   background-color: $white-sand;
-  -webkit-box-shadow: 0 8px 8px rgba(0, 0, 0, 0.06);
-  -moz-box-shadow: 0 8px 8px rgba(0, 0, 0, 0.06);
-  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.06);
+  @include box-shadow(0, 8px, 8px, rgba(0, 0, 0, 0.06));
 
   .navbar-brand {
     font-variant: small-caps;
