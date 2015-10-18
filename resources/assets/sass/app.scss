@@ -114,17 +114,16 @@ a {
   }
 
   .navbar-nav {
-
-    li.active {
-      background-color: $sea-foaming;
-    }
-
-    li a {
-      color: $black;
-    }
-
-    li a:hover {
-      background-color: $sea-foaming
+    li {
+      &.active {
+        background-color: $sea-foaming;
+      }
+      a {
+        color: $black;
+        &:hover {
+          background-color: $sea-foaming
+        }
+      }
     }
   }
 }
