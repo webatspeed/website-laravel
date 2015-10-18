@@ -16,7 +16,6 @@ $sea-foaming: #A8DBA8;
 $sea-showing-green: #79BD9A;
 $there-we-could-sail: #3B8686;
 $adrift-in-dreams: #0B486B;
-
 $adrift-in-dreams-light: #C0DBFD;
 
 @mixin animation($delay, $duration, $iteration-count: infinite) {
@@ -32,6 +31,17 @@ $adrift-in-dreams-light: #C0DBFD;
   animation-delay: $delay;
   animation-duration: $duration;
   animation-iteration-count: $iteration-count;
+}
+
+.wrap {
+  width: 100%;
+}
+
+main, footer {
+  .wrap, &.wrap {
+    border-bottom: 1px solid #ddd;
+    padding: 70px 0 70px 0;
+  }
 }
 
 a {
@@ -55,7 +65,7 @@ a {
 }
 
 .delay-3 {
-  @include animation(3s,2s,1);
+  @include animation(3s, 2s, 1);
 }
 
 #splash {
@@ -66,7 +76,7 @@ a {
 
   .arrow-up {
     margin-top: 100px;
-    @include animation(1s,2s,1);
+    @include animation(1s, 2s, 1);
 
     svg {
       width: 150px;
@@ -76,7 +86,7 @@ a {
 
   .arrow-down {
     margin-top: 100px;
-    @include animation(0,3s,infinite);
+    @include animation(0, 3s, infinite);
 
     svg {
       fill: $sunlit-sea;
@@ -114,22 +124,15 @@ a {
   }
 }
 
-.body-content > .row {
-  border-bottom: 1px solid #ddd;
-  padding: 70px 0 70px 0;
-}
-
-.row.darker {
+.darker {
   background-color: #f5f5f5;
 }
 
-.row.colorful {
+.colorful {
   background: radial-gradient(circle at bottom right, $sunlit-sea 0, $there-we-could-sail 100%);
   color: #FFFFFF;
 }
 
 .footer {
-  height: 300px;
   background-color: $adrift-in-dreams-light;
 }
-

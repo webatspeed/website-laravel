@@ -3,33 +3,34 @@
 @section('title', 'Web at Speed')
 
 @section('content')
-    <div class="site-index">
-
-        <div class="body-content">
-
-            <div class="row darker">
+    <div class="wrap darker">
+        <div class="container body-content">
+            <div class="row">
                 <div class="col-lg-12">
-
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-12 text-center">
                                 <h2>Software Development for Hire</h2>
+
                                 <p>
-                                    When it comes to web projects, saving time is often a key factor. We provide software
+                                    When it comes to web projects, saving time is often a key factor. We provide
+                                    software
                                     development in the web field ranging from simple support through to overall project
-                                    management. In addition, this requires a thoughtful choice of technology. We specialize
+                                    management. In addition, this requires a thoughtful choice of technology. We
+                                    specialize
                                     in PHP, Java, Grails and Angular.
                                 </p>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-12 text-center">
@@ -47,64 +48,75 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-
-            <div class="row darker">
+        </div>
+    </div>
+    <div class="wrap darker">
+        <div class="container body-content">
+            <div class="row">
                 <div class="col-lg-12">
-
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-12">
                                 <h2>Multiple Devices</h2>
+
                                 <p>
                                     Modern technology has brought us a wide range of devices: desktop computers, smart
                                     phones, tablets with varying functions and utilizing different technology, often
-                                    involving great expense. We provide solutions that can be scaled over various devices
+                                    involving great expense. We provide solutions that can be scaled over various
+                                    devices
                                     saving you time all the while ensuring that the features remain uncompromised.
                                 </p>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="container body-content">
             <div class="row">
                 <div class="col-lg-12">
-
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-12">
                                 <h2>Usability and Front-Ends</h2>
+
                                 <p>
-                                    Developers are frequently asked this common question, "Do you do front-end or back-end?"
-                                    Our answer is, “Both!” In the back-end you find the complexity of the application while
+                                    Developers are frequently asked this common question, "Do you do front-end or
+                                    back-end?"
+                                    Our answer is, “Both!” In the back-end you find the complexity of the application
+                                    while
                                     the front-end is the interface to the user. The whole system exists to assist and to
                                     extend user-friendliness. That's why no aspect can be neglected.
                                 </p>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="container body-content">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="container">
-
                         <div class="row">
                             <div class="col-lg-12">
                                 <h2>Customers</h2>
+
                                 <p>
                                     We have successfully worked together with Torsten for the last years. In different
-                                    projects he took roles as requirements engineer, software architect or senior developer.
+                                    projects he took roles as requirements engineer, software architect or senior
+                                    developer.
                                     He was always very reliable, fast and produced excellent results.<br/>
                                     Dr. Lars Fink,
                                     Managing Director at next level
                                 </p>
+
                                 <p>
                                     Meeting the delivery date and the budget we completely rely on Torsten.<br/>
                                     Dennis Kämker,
@@ -113,48 +125,56 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-
-            <div class="row colorful">
+        </div>
+    </div>
+    <div class="wrap colorful">
+        <div class="container body-content">
+            <div class="row">
                 <div class="col-lg-12">
-
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-12">
                                 <h2>Headhunters</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et
+                                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                    laboris nisi ut aliquip
+                                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                    esse cillum dolore eu
                                     fugiat nulla pariatur.
                                 </p>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="container body-content">
             <div class="row">
                 <div class="col-lg-12">
-
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-12">
                                 <h2>Contact Us</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et
+                                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                    laboris nisi ut aliquip
+                                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                    esse cillum dolore eu
                                     fugiat nulla pariatur.
                                 </p>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-
         </div>
     </div>
 @endsection
