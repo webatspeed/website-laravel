@@ -53,6 +53,18 @@ a {
   color: $adrift-in-dreams;
 }
 
+#shape-arrow-up {
+  * {
+    fill: none;
+  }
+  rect {
+    stroke: none;
+  }
+  path, line {
+    stroke-width: 3px;
+  }
+}
+
 .scribbled-note {
   font-family: $font-family-handwriting;
   color: $sunlit-sea;
