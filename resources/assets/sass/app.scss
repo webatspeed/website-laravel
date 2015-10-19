@@ -125,6 +125,12 @@ a {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  #splash {
+    background-size: 100%;
+  }
+}
+
 .navbar {
   background-color: $white-sand;
   @include box-shadow(0, 8px, 8px, rgba(0, 0, 0, 0.06));
