@@ -92,7 +92,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4 animated fadeIn delay-3">
+            <div class="col-md-3 animated fadeIn delay-3">
                 <div class="arrow-down bounce">
                     <span class="scribbled-note">
                         scroll down
