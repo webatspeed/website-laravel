@@ -19,7 +19,8 @@ $adrift-in-dreams: #0B486B;
 
 $adrift-in-dreams-light: #C0DBFD;
 $alto: #DDD;
-$white-sand: #f5f5f5;
+$mercury: #E7E7E7;
+$white-sand: #F5F5F5;
 $white: #FFF;
 $black: #000;
 
@@ -135,21 +136,23 @@ a {
   background-color: $white-sand;
   @include box-shadow(0, 8px, 8px, rgba(0, 0, 0, 0.06));
 
-  .navbar-brand {
-    font-variant: small-caps;
-    letter-spacing: 0.4pt;
-    font-weight: 500;
+  .dropdown-toggle {
+    margin-top: 9px;
+  }
+
+  .navbar-brand img {
+    height: 30px;
   }
 
   .navbar-nav {
     li {
-      &.active {
-        background-color: $sea-foaming;
+      &.active a {
+        background-color: $alto;
       }
       a {
         color: $black;
         &:hover {
-          background-color: $sea-foaming
+          background-color: $mercury;
         }
       }
     }

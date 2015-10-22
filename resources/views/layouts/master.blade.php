@@ -52,16 +52,18 @@
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    data-target="#navbar-collapse" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Web at Speed</a>
+            <a class="navbar-brand" href="#">
+                {!! Html::image("img/logo_transparent.png", 'Web at Speed') !!}
+            </a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse" id="navbar-collapse">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Dev <span class="sr-only">(current)</span></a></li>
                 <li><a href="#">Start-Up</a></li>
@@ -71,6 +73,31 @@
                 <li><a href="#">Headhunters</a></li>
                 <li><a href="#">Contact Us</a></li>
             </ul>
+            <div class="dropdown pull-right">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdown1" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="true">
+                    Login
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdown1">
+                    <li>
+                        <a href="#">with Facebook</a>
+                    </li>
+                    <li>
+                        <a href="#">with Google</a>
+                    </li>
+                    <li>
+                        <a href="#">with Twitter</a>
+                    </li>
+                    <li>
+                        <a href="#">with Xing</a>
+                    </li>
+                    <li role="separator" class="divider"></li>
+                    <li>
+                        <a href="#">with Email</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </nav>
