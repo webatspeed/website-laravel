@@ -65,7 +65,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Dev <span class="sr-only">(current)</span></a></li>
+                <li class="active"><a href="#">Development <span class="sr-only">(current)</span></a></li>
                 <li><a href="#">Start-Up</a></li>
                 <li><a href="#">Devices</a></li>
                 <li><a href="#">Usability</a></li>
@@ -74,11 +74,11 @@
                 <li><a href="#">Contact Us</a></li>
             </ul>
             <div class="dropdown pull-right">
-                <button class="btn btn-default dropdown-toggle" type="button" id="dropdown1" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="true">
+                <a class="dropdown-toggle" type="button" id="dropdown1" data-toggle="dropdown" role="button"
+                   aria-haspopup="true" aria-expanded="false">
                     Login
                     <span class="caret"></span>
-                </button>
+                </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdown1">
                     <li>
                         <a href="#">with Facebook</a>
