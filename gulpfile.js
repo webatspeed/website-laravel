@@ -14,6 +14,7 @@ var elixir = require('laravel-elixir');
 var paths = {
     "jquery": './vendor/components/jquery/',
     "bootstrap": './node_modules/bootstrap-sass/assets/',
+    "scroll": './node_modules/jquery-smooth-scroll/',
     "animate": './vendor/components/animate.css/',
     "css": './public/css/',
     "fonts": './public/fonts/'
@@ -32,6 +33,7 @@ elixir(function (mix) {
         .scripts([
             paths.jquery + 'jquery.min.js',
             paths.bootstrap + 'javascripts/bootstrap.min.js',
+            paths.scroll + 'jquery.smooth-scroll.min.js',
             'app.js'
         ])
         .copy(

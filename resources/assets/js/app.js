@@ -11,4 +11,6 @@ $(function () {
         }
     );
 
+    $('a').smoothScroll();
+
 });

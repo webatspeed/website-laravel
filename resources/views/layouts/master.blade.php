@@ -121,11 +121,11 @@
         <div class="row">
             <div class="col-md-3 animated fadeIn delay-3">
                 <div class="arrow-down bounce">
-                    <span class="scribbled-note">
-                        scroll down
-                    </span>
-                    <br/>
-                    <a href="#">
+                    <a href="#dev">
+                        <span class="scribbled-note">
+                            scroll down
+                        </span>
+                        <br/>
                         <svg>
                             <use xlink:href="#shape-arrow-down"></use>
                         </svg>
