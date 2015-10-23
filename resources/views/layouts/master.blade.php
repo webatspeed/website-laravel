@@ -24,7 +24,7 @@
     <link rel="stylesheet" type="text/css" href="{{ elixir("css/all.css") }}">
     <script src="{{ elixir("js/all.js") }}"></script>
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar">
 
 <svg class="hidden" xmlns="http://www.w3.org/2000/svg">
     <symbol id="shape-arrow-down" viewBox="288.1 406.4 19 29">
@@ -47,7 +47,7 @@
     </g>
 </svg>
 
-<nav class="wrap navbar navbar-default navbar-fixed-top">
+<nav class="wrap navbar navbar-default navbar-fixed-top" id="navbar">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -65,13 +65,13 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Development <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">Start-Up</a></li>
-                <li><a href="#">Devices</a></li>
-                <li><a href="#">Usability</a></li>
-                <li><a href="#">Customers</a></li>
-                <li><a href="#">Headhunters</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#dev">Development <span class="sr-only">(current)</span></a></li>
+                <li><a href="#startup">Start-Up</a></li>
+                <li><a href="#devices">Devices</a></li>
+                <li><a href="#usability">Usability</a></li>
+                <li><a href="#customers">Customers</a></li>
+                <li><a href="#headhunters">Headhunters</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
             <div class="dropdown pull-right">
                 <a class="dropdown-toggle" type="button" id="dropdown1" data-toggle="dropdown" role="button"

@@ -3,7 +3,7 @@
 @section('title', 'Web at Speed')
 
 @section('content')
-    <div class="wrap darker">
+    <div class="wrap darker" id="dev">
         <div class="container body-content">
             <div class="row">
                 <div class="col-lg-12">
@@ -27,7 +27,7 @@
             </div>
         </div>
     </div>
-    <div class="wrap">
+    <div class="wrap" id="startup">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -52,7 +52,7 @@
             </div>
         </div>
     </div>
-    <div class="wrap darker">
+    <div class="wrap darker" id="devices">
         <div class="container body-content">
             <div class="row">
                 <div class="col-lg-12">
@@ -75,7 +75,7 @@
             </div>
         </div>
     </div>
-    <div class="wrap">
+    <div class="wrap" id="usability">
         <div class="container body-content">
             <div class="row">
                 <div class="col-lg-12">
@@ -99,7 +99,7 @@
             </div>
         </div>
     </div>
-    <div class="wrap">
+    <div class="wrap" id="customers">
         <div class="container body-content">
             <div class="row">
                 <div class="col-lg-12">
@@ -129,7 +129,7 @@
             </div>
         </div>
     </div>
-    <div class="wrap colorful">
+    <div class="wrap colorful" id="headhunters">
         <div class="container body-content">
             <div class="row">
                 <div class="col-lg-12">
@@ -153,7 +153,7 @@
             </div>
         </div>
     </div>
-    <div class="wrap">
+    <div class="wrap" id="contact">
         <div class="container body-content">
             <div class="row">
                 <div class="col-lg-12">
