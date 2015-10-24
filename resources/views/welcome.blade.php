@@ -100,31 +100,49 @@
         </div>
     </div>
     <div class="wrap" id="customers">
-        <div class="container body-content">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <h2>Customers</h2>
-
-                                <p>
-                                    We have successfully worked together with Torsten for the last years. In different
-                                    projects he took roles as requirements engineer, software architect or senior
-                                    developer.
-                                    He was always very reliable, fast and produced excellent results.<br/>
-                                    Dr. Lars Fink,
-                                    Managing Director at next level
-                                </p>
-
-                                <p>
-                                    Meeting the delivery date and the budget we completely rely on Torsten.<br/>
-                                    Dennis Kämker,
-                                    Managing Director at Club Family
-                                </p>
-                            </div>
-                        </div>
+                <div class="col-lg-12 text-center">
+                    <h2>Customers</h2>
+                </div>
+            </div>
+            <div class="row bubbles">
+                <div class="col-lg-4">
+                    <div class="bubble animated fadeInUp">
+                        We have successfully worked together with Torsten for the last years. In different
+                        projects he took roles as requirements engineer, software architect or senior
+                        developer.
+                        He was always very reliable, fast and produced excellent results.
                     </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bubble animated fadeInUp">
+                        Meeting the delivery date and the budget we completely rely on Torsten.
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bubble animated fadeInUp">
+                        We have successfully worked together with Torsten for the last years. In different
+                        projects he took roles as requirements engineer, software architect or senior
+                        developer.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 text-center">
+                    {!! Html::image("img/lars-fink.jpg", 'Dr. Lars Fink', array('class' => 'circle')) !!}<br/>
+                    Dr. Lars Fink<br/>
+                    Managing Director at next level
+                </div>
+                <div class="col-lg-4 text-center">
+                    {!! Html::image("img/dennis-kaemker.jpg", 'Dennis Kämker', array('class' => 'circle')) !!}<br/>
+                    Dennis Kämker<br/>
+                    Managing Director at Club Family
+                </div>
+                <div class="col-lg-4 text-center">
+                    {!! Html::image("img/lars-fink.jpg", 'Dr. Lars Fink', array('class' => 'circle')) !!}<br/>
+                    Dr. Lars Fink<br/>
+                    Managing Director at next level
                 </div>
             </div>
         </div>
