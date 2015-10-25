@@ -103,7 +103,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Customers</h2>
+                    <h2>Content Customers</h2>
                 </div>
             </div>
             <div class="row bubbles">
@@ -129,17 +129,17 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 text-center">
+                <div class="col-lg-4 text-center caption">
                     {!! Html::image("img/lars-fink.jpg", 'Dr. Lars Fink', array('class' => 'circle')) !!}<br/>
                     Dr. Lars Fink<br/>
                     Managing Director at next level
                 </div>
-                <div class="col-lg-4 text-center">
+                <div class="col-lg-4 text-center caption">
                     {!! Html::image("img/dennis-kaemker.jpg", 'Dennis Kämker', array('class' => 'circle')) !!}<br/>
                     Dennis Kämker<br/>
                     Managing Director at Club Family
                 </div>
-                <div class="col-lg-4 text-center">
+                <div class="col-lg-4 text-center caption">
                     {!! Html::image("img/lars-fink.jpg", 'Dr. Lars Fink', array('class' => 'circle')) !!}<br/>
                     Dr. Lars Fink<br/>
                     Managing Director at next level

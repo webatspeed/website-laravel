@@ -16,12 +16,12 @@ $sea-foaming: #A8DBA8;
 $sea-showing-green: #79BD9A;
 $there-we-could-sail: #3B8686;
 $adrift-in-dreams: #0B486B;
-
 $adrift-in-dreams-light: #C0DBFD;
-$alto: #DDD;
-$mercury: #E7E7E7;
-$white-sand: #F5F5F5;
 $white: #FFF;
+$white-sand: #F5F5F5;
+$mercury: #E7E7E7;
+$alto: #DDD;
+$slate-gray: #7B8993;
 $black: #000;
 
 @mixin animation($delay, $duration, $iteration-count: infinite) {
@@ -64,6 +64,10 @@ main, footer {
 
 a {
   color: $adrift-in-dreams;
+}
+
+h2 {
+  margin-bottom: 30px;
 }
 
 #shape-arrow-up {
@@ -144,7 +148,7 @@ a {
     .dropdown-toggle {
       padding-bottom: 15px;
       padding-top: 15px;
-      color: #000;
+      color: $black;
       text-decoration: none;
     }
   }
@@ -233,4 +237,10 @@ img.circle {
   border: 1px solid $alto;
 }
 
-
+.caption {
+  color: $slate-gray;
+  margin-top: 10px;
+  img {
+    margin-bottom: 10px;
+  }
+}
