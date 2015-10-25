@@ -6,23 +6,17 @@
     <div class="wrap darker" id="dev">
         <div class="container body-content">
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12 text-center">
-                                <h2>Software Development for Hire</h2>
+                <div class="col-lg-12 text-center">
+                    <h2>Software Development for Hire</h2>
 
-                                <p>
-                                    When it comes to web projects, saving time is often a key factor. We provide
-                                    software
-                                    development in the web field ranging from simple support through to overall project
-                                    management. In addition, this requires a thoughtful choice of technology. We
-                                    specialize
-                                    in PHP, Java, Grails and Angular.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    <p>
+                        When it comes to web projects, saving time is often a key factor. We provide
+                        software
+                        development in the web field ranging from simple support through to overall project
+                        management. In addition, this requires a thoughtful choice of technology. We
+                        specialize
+                        in PHP, Java, Grails and Angular.
+                    </p>
                 </div>
             </div>
         </div>
@@ -30,24 +24,18 @@
     <div class="wrap" id="startup">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12 text-center">
-                                <h2>Initiate Your Startup's Technology</h2>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                Berlin has a vibrant startup community. Owing to their potential for growth, large
-                                companies are often on the lookout to benefit from startups. We have experience handling
-                                projects, whatever the size of the company, to ensure a dynamic internet environment.
-                            </div>
-                            <div class="col-lg-6">
-                                {!! Html::image('img/car.jpg') !!}
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-lg-12 text-center">
+                    <h2>Initiate Your Startup's Technology</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    Berlin has a vibrant startup community. Owing to their potential for growth, large
+                    companies are often on the lookout to benefit from startups. We have experience handling
+                    projects, whatever the size of the company, to ensure a dynamic internet environment.
+                </div>
+                <div class="col-lg-6">
+                    {!! Html::image('img/car.jpg') !!}
                 </div>
             </div>
         </div>
@@ -56,21 +44,15 @@
         <div class="container body-content">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <h2>Multiple Devices</h2>
+                    <h2>Multiple Devices</h2>
 
-                                <p>
-                                    Modern technology has brought us a wide range of devices: desktop computers, smart
-                                    phones, tablets with varying functions and utilizing different technology, often
-                                    involving great expense. We provide solutions that can be scaled over various
-                                    devices
-                                    saving you time all the while ensuring that the features remain uncompromised.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    <p>
+                        Modern technology has brought us a wide range of devices: desktop computers, smart
+                        phones, tablets with varying functions and utilizing different technology, often
+                        involving great expense. We provide solutions that can be scaled over various
+                        devices
+                        saving you time all the while ensuring that the features remain uncompromised.
+                    </p>
                 </div>
             </div>
         </div>
@@ -79,22 +61,16 @@
         <div class="container body-content">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <h2>Usability and Front-Ends</h2>
+                    <h2>Usability and Front-Ends</h2>
 
-                                <p>
-                                    Developers are frequently asked this common question, "Do you do front-end or
-                                    back-end?"
-                                    Our answer is, “Both!” In the back-end you find the complexity of the application
-                                    while
-                                    the front-end is the interface to the user. The whole system exists to assist and to
-                                    extend user-friendliness. That's why no aspect can be neglected.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    <p>
+                        Developers are frequently asked this common question, "Do you do front-end or
+                        back-end?"
+                        Our answer is, “Both!” In the back-end you find the complexity of the application
+                        while
+                        the front-end is the interface to the user. The whole system exists to assist and to
+                        extend user-friendliness. That's why no aspect can be neglected.
+                    </p>
                 </div>
             </div>
         </div>
@@ -175,22 +151,16 @@
         <div class="container body-content">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <h2>Contact Us</h2>
+                    <h2>Contact Us</h2>
 
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et
-                                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                    laboris nisi ut aliquip
-                                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                                    esse cillum dolore eu
-                                    fugiat nulla pariatur.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                        esse cillum dolore eu
+                        fugiat nulla pariatur.
+                    </p>
                 </div>
             </div>
         </div>
