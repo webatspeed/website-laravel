@@ -24,7 +24,7 @@
     <link rel="stylesheet" type="text/css" href="{{ elixir("css/all.css") }}">
     <script src="{{ elixir("js/all.js") }}"></script>
 </head>
-<body data-spy="scroll" data-target="#navbar">
+<body>
 
 <svg class="hidden" xmlns="http://www.w3.org/2000/svg">
     <symbol id="shape-arrow-down" viewBox="288.1 406.4 19 29">

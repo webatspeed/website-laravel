@@ -108,7 +108,7 @@
             </div>
             <div class="row bubbles">
                 <div class="col-lg-4">
-                    <div class="bubble animated fadeInUp">
+                    <div class="bubble hidden">
                         We have successfully worked together with Torsten for the last years. In different
                         projects he took roles as requirements engineer, software architect or senior
                         developer.
@@ -116,12 +116,12 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="bubble animated fadeInUp">
+                    <div class="bubble hidden">
                         Meeting the delivery date and the budget we completely rely on Torsten.
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="bubble animated fadeInUp">
+                    <div class="bubble hidden">
                         We have successfully worked together with Torsten for the last years. In different
                         projects he took roles as requirements engineer, software architect or senior
                         developer.

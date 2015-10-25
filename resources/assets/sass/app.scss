@@ -51,6 +51,10 @@ $black: #000;
   }
 }
 
+body {
+  position: relative;
+}
+
 .wrap {
   width: 100%;
 }
@@ -191,6 +195,7 @@ h2 {
   }
 
   color: $there-we-could-sail;
+  min-height: 200px;
 
   div:last-child .bubble {
     color: $sea-showing-green;
