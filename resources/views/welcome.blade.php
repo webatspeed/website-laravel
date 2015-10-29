@@ -9,41 +9,50 @@
                 <div class="col-lg-12 text-center">
                     <h2>Software Development for Hire</h2>
                 </div>
+            </div>
+            <div class="row">
                 <div class="col-lg-12 text-center">
-                    When it comes to web projects, saving time is often a key factor. We provide
-                    software
-                    development in the web field ranging from simple support through to overall project
-                    management. In addition, this requires a thoughtful choice of technology. We
-                    specialize
-                    in PHP, Java, Grails and Angular.
+                    <p>
+                        When it comes to web projects, saving time is often a key factor. We provide
+                        software
+                        development in the web field ranging from simple support through to overall project
+                        management. In addition, this requires a thoughtful choice of technology. We
+                        specialize in...
+                    </p>
                 </div>
+            </div>
+            <div class="row">
                 <div class="col-lg-12 text-center">
                     <ul class="list-inline tech">
                         <li>
                             <i class="icon-php"></i>
+
                             <div class="caption">PHP</div>
                         </li>
                         <li>
                             <i class="icon-java-bold"></i>
+
                             <div class="caption">Java</div>
                         </li>
                         <li>
                             <i class="icon-grails-alt"></i>
+
                             <div class="caption">Grails</div>
                         </li>
                         <li>
                             <i class="icon-scala"></i>
+
                             <div class="caption">Groovy</div>
                         </li>
                         <li>
                             <i class="icon-javascript"></i>
+
                             <div class="caption">AngularJS</div>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-    </div>
     </div>
     <div class="wrap darker" id="startup">
         <div class="container">
