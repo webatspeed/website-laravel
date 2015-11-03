@@ -23,6 +23,12 @@ $(function () {
         var href = $('.nav li.active > a').attr('href');
         if (href == '#customers') {
             $('.bubble').addClass('animated fadeInUp').removeClass('hidden');
+        } else if (href == '#dev') {
+            $('.tech li:nth-child(1) i').addClass('animated fadeInUp').removeClass('hidden');
+            $('.tech li:nth-child(2) i').addClass('animated fadeInUp').removeClass('hidden');
+            $('.tech li:nth-child(3) i').addClass('animated fadeInUp').removeClass('hidden');
+            $('.tech li:nth-child(4) i').addClass('animated fadeInUp').removeClass('hidden');
+            $('.tech li:nth-child(5) i').addClass('animated fadeInUp').removeClass('hidden');
         }
     });
 

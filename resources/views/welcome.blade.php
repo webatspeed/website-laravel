@@ -25,27 +25,27 @@
                 <div class="col-lg-12 text-center">
                     <ul class="list-inline tech">
                         <li>
-                            <i class="icon-php"></i>
+                            <i class="icon-php hidden"></i>
 
                             <div class="caption">PHP</div>
                         </li>
                         <li>
-                            <i class="icon-java-bold"></i>
+                            <i class="icon-java-bold hidden delay-01"></i>
 
                             <div class="caption">Java</div>
                         </li>
                         <li>
-                            <i class="icon-grails-alt"></i>
+                            <i class="icon-grails-alt hidden delay-02"></i>
 
                             <div class="caption">Grails</div>
                         </li>
                         <li>
-                            <i class="icon-scala"></i>
+                            <i class="icon-scala hidden delay-03"></i>
 
                             <div class="caption">Groovy</div>
                         </li>
                         <li>
-                            <i class="icon-javascript"></i>
+                            <i class="icon-javascript hidden delay-04"></i>
 
                             <div class="caption">AngularJS</div>
                         </li>
