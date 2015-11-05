@@ -306,6 +306,18 @@ p {
   }
 }
 
+#startup {
+  height: 500px;
+}
+
+.car {
+  position: absolute;
+  left: -20px;
+  width: 668px;
+  height: 500px;
+  margin-top: -60px;
+}
+
 img.circle {
   border-radius: 100%;
   border: 1px solid $alto;

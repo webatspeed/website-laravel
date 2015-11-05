@@ -57,18 +57,16 @@
     <div class="wrap darker" id="startup">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-lg-12 car">
+                    {!! Html::image('img/car.png') !!}
+                </div>
+                <div class="col-lg-6 pull-right">
                     <h2>Initiate Your Startup's Technology</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    Berlin has a vibrant startup community. Owing to their potential for growth, large
-                    companies are often on the lookout to benefit from startups. We have experience handling
-                    projects, whatever the size of the company, to ensure a dynamic internet environment.
-                </div>
-                <div class="col-lg-6">
-                    {!! Html::image('img/car.jpg') !!}
+                    <p>
+                        Berlin has a vibrant startup community. Owing to their potential for growth, large
+                        companies are often on the lookout to benefit from startups. We have experience handling
+                        projects, whatever the size of the company, to ensure a dynamic internet environment.
+                    </p>
                 </div>
             </div>
         </div>
@@ -112,7 +110,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Content Customers</h2>
+                    <h2>Happy Customers</h2>
                 </div>
             </div>
             <div class="row bubbles">
