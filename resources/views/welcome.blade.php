@@ -57,7 +57,7 @@
     <div class="wrap darker" id="startup">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 car">
+                <div class="col-lg-12 car hidden">
                     {!! Html::image('img/car.png') !!}
                 </div>
                 <div class="col-lg-6 pull-right">

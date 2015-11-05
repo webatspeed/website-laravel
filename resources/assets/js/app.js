@@ -29,6 +29,8 @@ $(function () {
             $('.tech li:nth-child(3) i').addClass('animated fadeInUp').removeClass('hidden');
             $('.tech li:nth-child(4) i').addClass('animated fadeInUp').removeClass('hidden');
             $('.tech li:nth-child(5) i').addClass('animated fadeInUp').removeClass('hidden');
+        } else if (href == '#startup') {
+            $('.car').addClass('animated slideInLeft').removeClass('hidden');
         }
     });
 
