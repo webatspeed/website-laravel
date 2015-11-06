@@ -60,8 +60,9 @@
                 <div class="col-lg-12 car hidden">
                     {!! Html::image('img/car.png') !!}
                 </div>
-                <div class="col-lg-6 pull-right">
+                <div class="col-lg-5 pull-right">
                     <h2>Initiate Your Startup's Technology</h2>
+
                     <p>
                         Berlin has a vibrant startup community. Owing to their potential for growth, large
                         companies are often on the lookout to benefit from startups. We have experience handling
@@ -71,27 +72,10 @@
             </div>
         </div>
     </div>
-    <div class="wrap" id="devices">
-        <div class="container body-content">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>Multiple Devices</h2>
-
-                    <p>
-                        Modern technology has brought us a wide range of devices: desktop computers, smart
-                        phones, tablets with varying functions and utilizing different technology, often
-                        involving great expense. We provide solutions that can be scaled over various
-                        devices
-                        saving you time all the while ensuring that the features remain uncompromised.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="wrap" id="usability">
         <div class="container body-content">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-5">
                     <h2>Usability and Front-Ends</h2>
 
                     <p>
@@ -101,6 +85,29 @@
                         while
                         the front-end is the interface to the user. The whole system exists to assist and to
                         extend user-friendliness. That's why no aspect can be neglected.
+                    </p>
+                </div>
+                <div class="col-lg-7 text-center speedometer hidden">
+                    {!! Html::image('img/speedometer.png') !!}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrap" id="devices">
+        <div class="container body-content">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Multiple Devices</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>
+                        Modern technology has brought us a wide range of devices: desktop computers, smart
+                        phones, tablets with varying functions and utilizing different technology, often
+                        involving great expense. We provide solutions that can be scaled over various
+                        devices
+                        saving you time all the while ensuring that the features remain uncompromised.
                     </p>
                 </div>
             </div>

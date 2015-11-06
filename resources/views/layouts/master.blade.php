@@ -67,8 +67,8 @@
             <ul class="nav navbar-nav">
                 <li><a href="#dev">Development <span class="sr-only">(current)</span></a></li>
                 <li><a href="#startup">Start-Up</a></li>
-                <li><a href="#devices">Devices</a></li>
                 <li><a href="#usability">Usability</a></li>
+                <li><a href="#devices">Devices</a></li>
                 <li><a href="#customers">Customers</a></li>
                 <li><a href="#headhunters">Headhunters</a></li>
                 <li><a href="#contact">Contact Us</a></li>

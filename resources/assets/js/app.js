@@ -31,6 +31,8 @@ $(function () {
             $('.tech li:nth-child(5) i').addClass('animated fadeInUp').removeClass('hidden');
         } else if (href == '#startup') {
             $('.car').addClass('animated slideInLeft').removeClass('hidden');
+        } else if (href == '#usability') {
+            $('.speedometer').addClass('animated rotateIn').removeClass('hidden');
         }
     });
 
