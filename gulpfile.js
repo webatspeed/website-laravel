@@ -27,6 +27,7 @@ elixir(function (mix) {
             'app.scss'
         ])
         .styles([
+            './node_modules/font-awesome/css/font-awesome.css',
             paths.animate + 'animate.css',
             paths.css + 'app.css'
         ])
@@ -38,6 +39,10 @@ elixir(function (mix) {
         ])
         .copy(
             './resources/assets/fonts',
+            paths.fonts
+        )
+        .copy(
+            './node_modules/font-awesome/fonts',
             paths.fonts
         )
         .version([
