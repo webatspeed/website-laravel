@@ -24,8 +24,8 @@ var paths = {
 
 elixir(function (mix) {
     mix
-        .copy(paths.sass.env + '_variables-' + env + '.scss', paths.sass.vendor + '_variables.scss')
         .copy(paths.fonts.fa, paths.fonts.public)
+        .copy(paths.sass.env + '_variables-' + env + '.scss', paths.sass.vendor + '_variables.scss')
         .copy(paths.sass.bootstrap, paths.sass.vendor)
         .copy(paths.sass.fa, paths.sass.vendor + 'font-awesome')
         .sass(['app.scss'])
