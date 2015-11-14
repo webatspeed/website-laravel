@@ -1,52 +1,38 @@
 var elixir = require('laravel-elixir');
-
-/*
- |--------------------------------------------------------------------------
- | Elixir Asset Management
- |--------------------------------------------------------------------------
- |
- | Elixir provides a clean, fluent API for defining some basic Gulp tasks
- | for your Laravel application. By default, we are compiling the Sass
- | file for our application, as well as publishing vendor resources.
- |
- */
-
+var env = elixir.config.production ? 'prod' : 'dev';
 var paths = {
-    "jquery": './vendor/components/jquery/',
-    "bootstrap": './node_modules/bootstrap-sass/assets/',
-    "scroll": './node_modules/jquery-smooth-scroll/',
-    "animate": './vendor/components/animate.css/',
-    "css": './public/css/',
-    "fonts": './public/fonts/'
-    //http://bythebutterfly.com/shop.php
+    css: {
+        animate: './vendor/components/animate.css/animate.css',
+        public: './public/css/app.css'
+    },
+    fonts: {
+        fa: './node_modules/font-awesome/fonts',
+        public: './public/fonts/vendor'
+    },
+    js: {
+        jquery: './vendor/components/jquery/jquery.js',
+        bootstrap: './node_modules/bootstrap-sass/assets/javascripts/bootstrap.js',
+        scroll: './node_modules/jquery-smooth-scroll/jquery.smooth-scroll.js'
+    },
+    sass: {
+        bootstrap: './node_modules/bootstrap-sass/assets/stylesheets',
+        env: elixir.config.get('assets.css.sass.folder') + '/env/',
+        fa: './node_modules/font-awesome/scss/*.scss',
+        vendor: elixir.config.get('assets.css.sass.folder') + '/vendor/'
+    }
 };
 
 elixir(function (mix) {
     mix
-        .sass([
-            'app.scss'
-        ])
-        .styles([
-            './node_modules/font-awesome/css/font-awesome.css',
-            paths.animate + 'animate.css',
-            paths.css + 'app.css'
-        ])
-        .scripts([
-            paths.jquery + 'jquery.min.js',
-            paths.bootstrap + 'javascripts/bootstrap.min.js',
-            paths.scroll + 'jquery.smooth-scroll.min.js',
-            'app.js'
-        ])
-        .copy(
-            './resources/assets/fonts',
-            paths.fonts
-        )
-        .copy(
-            './node_modules/font-awesome/fonts',
-            paths.fonts
-        )
+        .copy(paths.sass.env + '_variables-' + env + '.scss', paths.sass.vendor + '_variables.scss')
+        .copy(paths.fonts.fa, paths.fonts.public)
+        .copy(paths.sass.bootstrap, paths.sass.vendor)
+        .copy(paths.sass.fa, paths.sass.vendor + 'font-awesome')
+        .sass(['app.scss'])
+        .styles([paths.css.animate, paths.css.public])
+        .scripts([paths.js.jquery, paths.js.bootstrap, paths.js.scroll, 'app.js'])
         .version([
-            'css/all.css',
-            'js/all.js'
+            elixir.config.get('public.css.outputFolder') + '/all.css',
+            elixir.config.get('public.js.outputFolder') + '/all.js'
         ]);
 });

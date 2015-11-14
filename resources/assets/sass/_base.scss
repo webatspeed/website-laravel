@@ -1,0 +1,30 @@
+body {
+  position: relative;
+  font-family: $font-family-sans-serif;
+}
+
+.wrap {
+  width: 100%;
+}
+
+main, footer {
+  .wrap, &.wrap {
+    border-bottom: 1px solid $alto;
+    padding: 60px 0 80px 0;
+  }
+}
+
+a {
+  color: $adrift-in-dreams;
+}
+
+h2 {
+  font-weight: 100;
+}
+
+p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 200;
+  font-size: 19px;
+}

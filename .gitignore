@@ -13,4 +13,5 @@ composer.phar
 /public/css
 /public/build
 /public/js
-/public/fonts
+/public/fonts/vendor
+/resources/assets/sass/vendor
