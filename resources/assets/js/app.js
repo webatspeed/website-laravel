@@ -21,18 +21,19 @@ $(function () {
         // fade in customer bubbles on scrolling in
     }).on('activate.bs.scrollspy', function () {
         var href = $('.nav li.active > a').attr('href');
-        if (href == '#customers') {
-            $('.bubble').addClass('animated fadeInUp').removeClass('hidden');
-        } else if (href == '#dev') {
-            $('.tech li:nth-child(1) i').addClass('animated fadeInUp').removeClass('hidden');
-            $('.tech li:nth-child(2) i').addClass('animated fadeInUp').removeClass('hidden');
-            $('.tech li:nth-child(3) i').addClass('animated fadeInUp').removeClass('hidden');
-            $('.tech li:nth-child(4) i').addClass('animated fadeInUp').removeClass('hidden');
-            $('.tech li:nth-child(5) i').addClass('animated fadeInUp').removeClass('hidden');
-        } else if (href == '#startup') {
-            $('.car').addClass('animated slideInLeft').removeClass('hidden');
-        } else if (href == '#usability') {
-            $('.speedometer').addClass('animated rotateIn').removeClass('hidden');
+        switch (href) {
+            case '#customers':
+                $('.bubble').addClass('animated fadeInUp').removeClass('hidden');
+                break;
+            case '#dev':
+                for (var i = 0; i < 6; i++)
+                    $('.tech li:nth-child(' + i + ') i').addClass('animated fadeInUp').removeClass('hidden');
+                break;
+            case '#startup':
+                $('.car').addClass('animated slideInLeft').removeClass('hidden');
+                break;
+            case '#usability':
+                $('.speedometer').addClass('animated fadeIn').removeClass('hidden');
         }
     });
 
