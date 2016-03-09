@@ -139,8 +139,47 @@
     @yield('content')
 </main>
 <footer class="wrap footer">
-    <div class="container text-center">
-        The current UNIX timestamp is {{ time() }}.
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                LOGO
+                <h4>&copy; <?php echo date('Y'); ?> Web at Speed</h4>
+            </div>
+            <div class="col-md-4">
+                <h4>Contact Us</h4>
+                <ul class="list-unstyled">
+                    <li>Web at Speed UG (haftungsbeschränkt)<br/>Thaerstr. 16, 10249 Berlin</li>
+                    <li>torsten.krohn (at) webatspeed.com</li>
+                    <li>Tel.: +49 30 84115252</li>
+                </ul>
+                <h4>Follow Us</h4>
+                <ul class="list-inline">
+                    <li>
+                        <a href="#"><i class="fa fa-facebook-square fa-3x"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-google-plus-square fa-3x"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-xing-square fa-3x"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#">Impressum / Imprint</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                </ul>
+                <a class="btn btn-default pull-right" href="#top" role="button">
+                    <i class="fa fa-chevron-up"></i>
+                    top
+                </a>
+            </div>
+        </div>
     </div>
 </footer>
 </body>
