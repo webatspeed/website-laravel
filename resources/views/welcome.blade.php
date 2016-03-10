@@ -145,6 +145,12 @@
             <div class="row bubbles">
                 <div class="col-lg-4">
                     <div class="bubble hidden">
+                        Torsten is an allrounder in terms of both front-end and back-end. His analytical skills, even
+                        when it comes to highly complex features, are terrific and a great benefit for all IT ventures.
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bubble hidden">
                         We have successfully worked together with Torsten for the last years. In different
                         projects he took roles as requirements engineer, software architect or senior
                         developer.
@@ -156,29 +162,52 @@
                         Meeting the delivery date and the budget we completely rely on Torsten.
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="bubble hidden">
-                        We have successfully worked together with Torsten for the last years. In different
-                        projects he took roles as requirements engineer, software architect or senior
-                        developer.
-                    </div>
-                </div>
             </div>
             <div class="row">
                 <div class="col-lg-4 text-center caption">
+                    {!! Html::image("img/malte-barth.jpg", 'Malte Barth', array('class' => 'circle')) !!}<br/>
+                    Malte Barth<br/>
+                    Advisor and Entrepreneur at <a href="http://rwy.be">Runway Capital</a>
+                </div>
+                <div class="col-lg-4 text-center caption">
                     {!! Html::image("img/lars-fink.jpg", 'Dr. Lars Fink', array('class' => 'circle')) !!}<br/>
                     Dr. Lars Fink<br/>
-                    Managing Director at next level
+                    Managing Director at <a href="https://www.nextlevel.de">next level</a>
                 </div>
                 <div class="col-lg-4 text-center caption">
                     {!! Html::image("img/dennis-kaemker.jpg", 'Dennis Kämker', array('class' => 'circle')) !!}<br/>
                     Dennis Kämker<br/>
-                    Managing Director at Club Family
+                    Managing Director at <a href="http://www.club-family.de">Club Family</a>
                 </div>
-                <div class="col-lg-4 text-center caption">
-                    {!! Html::image("img/lars-fink.jpg", 'Dr. Lars Fink', array('class' => 'circle')) !!}<br/>
-                    Dr. Lars Fink<br/>
-                    Managing Director at next level
+            </div>
+            <div class="row bubbles">
+                <div class="col-lg-6">
+                    <div class="bubble hidden">
+                        We have successfully worked together with Torsten for the last years. In different
+                        projects he took roles as requirements engineer, software architect or senior
+                        developer.
+                        He was always very reliable, fast and produced excellent results.
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bubble hidden">
+                        We have successfully worked together with Torsten for the last years. In different
+                        projects he took roles as requirements engineer, software architect or senior
+                        developer.
+                        He was always very reliable, fast and produced excellent results.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 text-center caption">
+                    {!! Html::image("img/andreas-durth.jpg", 'Andreas Durth', array('class' => 'circle')) !!}<br/>
+                    Andreas Durth<br/>
+                    CMO and Manager at <a href="http://www.studienkreis.de">Studienkreis</a>
+                </div>
+                <div class="col-lg-6 text-center caption">
+                    {!! Html::image("img/mitja-dreu.jpg", 'Mitja Dreu', array('class' => 'circle')) !!}<br/>
+                    Mitja Dreu<br/>
+                    CTO at <a href="http://www.avenso.com">Avenso</a>
                 </div>
             </div>
         </div>
