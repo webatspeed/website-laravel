@@ -40,7 +40,7 @@
                             <div class="caption">Grails</div>
                         </li>
                         <li>
-                            <i class="icon-scala hidden delay-03"></i>
+                            <i class="fa fa-star-o hidden delay-03"></i>
 
                             <div class="caption">Groovy</div>
                         </li>
@@ -172,12 +172,12 @@
                 <div class="col-lg-4 text-center caption">
                     {!! Html::image("img/lars-fink.jpg", 'Dr. Lars Fink', array('class' => 'circle')) !!}<br/>
                     Dr. Lars Fink<br/>
-                    Managing Director at <a href="https://www.nextlevel.de">next level</a>
+                    Founder and Managing Partner at <a href="https://www.nextlevel.de">next level</a>
                 </div>
                 <div class="col-lg-4 text-center caption">
                     {!! Html::image("img/dennis-kaemker.jpg", 'Dennis Kämker', array('class' => 'circle')) !!}<br/>
                     Dennis Kämker<br/>
-                    Managing Director at <a href="http://www.club-family.de">Club Family</a>
+                    Founder and Managing Partner at <a href="http://www.club-family.de">Club Family</a>
                 </div>
             </div>
             <div class="row bubbles">
