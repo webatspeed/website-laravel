@@ -183,9 +183,9 @@
             <div class="row bubbles">
                 <div class="col-lg-4 col-lg-offset-2">
                     <div class="bubble hidden">
-                        We have successfully worked together with Torsten for the last years. In different
-                        projects he took roles as requirements engineer, software architect or senior
-                        developer.
+                        Finally a developer who means 'done' when he says "it's done": not only did it look 'done',
+                        it also worked 100% bug-free. And all that after being extraordinary fast - I can
+                        enthusiastically recommend Torsten.
                     </div>
                 </div>
                 <div class="col-lg-4">
