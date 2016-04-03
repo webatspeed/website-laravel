@@ -111,26 +111,7 @@
                     </p>
                 </div>
                 <div class="col-lg-12 text-center">
-                    <ul class="list-inline">
-                        <li>
-                            <i class="fa fa-television fa-5x"></i>
-                        </li>
-                        <li>
-                            <i class="fa fa-desktop fa-5x"></i>
-                        </li>
-                        <li>
-                            <i class="fa fa-laptop fa-5x"></i>
-                        </li>
-                        <li>
-                            <i class="fa fa-tablet fa-5x"></i>
-                        </li>
-                        <li>
-                            <i class="fa fa-mobile fa-5x"></i>
-                        </li>
-                        <li>
-                            <i class="fa fa-check fa-5x"></i>
-                        </li>
-                    </ul>
+                    {!! Html::image('img/computers.svg') !!}
                 </div>
             </div>
         </div>
