@@ -195,16 +195,17 @@
     <div class="wrap colorful" id="headhunters">
         <div class="container body-content">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-6 text-center cv hidden">
+                    {!! Html::image('img/cv.png') !!}
+                </div>
+                <div class="col-lg-6">
                     <h2>Headhunters</h2>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip
-                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                        esse cillum dolore eu
-                        fugiat nulla pariatur.
+                    <p>
+                        Developers are frequently asked this common question, "Do you do front-end or
+                        back-end?" Our answer is, “Both!” In the back-end you find the complexity of the application
+                        while the front-end is the interface to the user. The whole system exists to assist and to
+                        extend user-friendliness. That's why no aspect can be neglected.
                     </p>
                 </div>
 

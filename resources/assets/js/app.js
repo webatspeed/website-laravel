@@ -34,6 +34,9 @@ $(function () {
                 break;
             case '#usability':
                 $('.frontend').addClass('animated fadeIn').removeClass('hidden');
+                break;
+            case '#headhunters':
+                $('.cv').addClass('animated fadeIn').removeClass('hidden');
         }
     });
 
