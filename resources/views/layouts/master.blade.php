@@ -71,7 +71,7 @@
                 <li><a href="#devices">Devices</a></li>
                 <li><a href="#customers">Customers</a></li>
                 <li><a href="#headhunters">Headhunters</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#contact">Content</a></li>
             </ul>
             <div class="dropdown pull-right">
                 <a class="dropdown-toggle" type="button" id="dropdown1" data-toggle="dropdown" role="button"
