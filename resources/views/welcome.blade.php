@@ -87,8 +87,8 @@
                         extend user-friendliness. That's why no aspect can be neglected.
                     </p>
                 </div>
-                <div class="col-lg-7 text-center speedometer hidden">
-                    {!! Html::image('img/speedometer.png') !!}
+                <div class="col-lg-7 text-center frontend hidden">
+                    {!! Html::image('img/frontend.svg') !!}
                 </div>
             </div>
         </div>

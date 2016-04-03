@@ -33,7 +33,7 @@ $(function () {
                 $('.car').addClass('animated slideInLeft').removeClass('hidden');
                 break;
             case '#usability':
-                $('.speedometer').addClass('animated fadeIn').removeClass('hidden');
+                $('.frontend').addClass('animated fadeIn').removeClass('hidden');
         }
     });
 
