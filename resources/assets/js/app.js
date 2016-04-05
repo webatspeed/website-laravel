@@ -35,8 +35,13 @@ $(function () {
             case '#usability':
                 $('.frontend').addClass('animated fadeIn').removeClass('hidden');
                 break;
+            case '#devices':
+                $('.computers').addClass('animated fadeIn').removeClass('hidden');
+                break;
             case '#headhunters':
-                $('.cv').addClass('animated fadeIn').removeClass('hidden');
+                var cv = $('.cv');
+                cv.addClass('animated fadeIn').removeClass('hidden');
+                cv.next().removeClass('col-lg-offset-6');
         }
     });
 

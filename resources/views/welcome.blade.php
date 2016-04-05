@@ -110,7 +110,7 @@
                         saving you time all the while ensuring that the features remain uncompromised.
                     </p>
                 </div>
-                <div class="col-lg-12 text-center">
+                <div class="col-lg-12 text-center computers hidden">
                     {!! Html::image('img/computers.svg') !!}
                 </div>
             </div>
@@ -198,7 +198,7 @@
                 <div class="col-lg-6 text-center cv hidden">
                     {!! Html::image('img/cv.png') !!}
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-lg-offset-6">
                     <h2>Headhunters</h2>
 
                     <p>
