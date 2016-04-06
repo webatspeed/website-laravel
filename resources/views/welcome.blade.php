@@ -199,14 +199,28 @@
                     {!! Html::image('img/cv.png') !!}
                 </div>
                 <div class="col-lg-6 col-lg-offset-6">
-                    <h2>Headhunters</h2>
+                    <h2>Dear Headhunters</h2>
 
                     <p>
-                        Developers are frequently asked this common question, "Do you do front-end or
-                        back-end?" Our answer is, “Both!” In the back-end you find the complexity of the application
-                        while the front-end is the interface to the user. The whole system exists to assist and to
-                        extend user-friendliness. That's why no aspect can be neglected.
+                        If your business is searching for IT experts sign up for the CV newsletter.
+                        You'll never miss skill updates or new availability dates due to the emails we send
+                        approximately three times a year.
                     </p>
+                    <form class="form-inline">
+                        <div class="form-group form-group-lg">
+                            <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+                        </div>
+                        <div class="form-group form-group-lg">
+                            <label class="radio-inline">
+                                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> DOCX
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> PDF
+                            </label>
+                        </div>
+                        <button type="button" class="btn btn-default btn-lg col-md-offset-1" disabled="disabled">Sign up</button>
+                    </form>
                 </div>
 
             </div>

@@ -138,6 +138,11 @@
   background-color: $adrift-in-dreams-light;
 }
 
+.form-group-lg input[type=radio] {
+  transform: scale(2);
+  margin-left: -25px;
+}
+
 .bubbles {
   div:first-child .bubble {
     color: $adrift-in-dreams;
@@ -264,4 +269,20 @@ img.circle {
 .icon-javascript:before {
   content: "\f128";
   margin-left: 10px;
+}
+
+// overriding/extending bootstrap
+.form-group-lg {
+  .radio-inline,
+  .checkbox-inline {
+    padding-left: 45px;
+  }
+}
+.btn-default {
+  @include button-variant($btn-success-color, $there-we-could-sail, $there-we-could-sail);
+  @include transition(all 0.2s ease-in-out);
+  &:hover {
+    background-color: $adrift-in-dreams;
+    border-color: $adrift-in-dreams;
+  }
 }
