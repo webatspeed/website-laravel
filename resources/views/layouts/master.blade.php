@@ -73,6 +73,7 @@
                 <li><a href="#headhunters">Headhunters</a></li>
                 <li><a href="#contact">Content</a></li>
             </ul>
+            <!--
             <div class="dropdown pull-right">
                 <a class="dropdown-toggle" type="button" id="dropdown1" data-toggle="dropdown" role="button"
                    aria-haspopup="true" aria-expanded="false">
@@ -98,6 +99,7 @@
                     </li>
                 </ul>
             </div>
+            -->
         </div>
     </div>
 </nav>
