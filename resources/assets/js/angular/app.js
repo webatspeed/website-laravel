@@ -12,12 +12,16 @@
                     this.format = 'pdf';
                     this.status = 'unsubscribed';
 
-                    this.isEmailValid = function () {
-                        return this.email != null && this.email != '' && elem.$valid;
+                    this.isFormValid = function (form) {
+                        return form.$valid;
                     };
 
-                    this.isFormToDisable = function () {
-                        return !this.isEmailValid();
+                    this.isSuccess = function (form) {
+                        return form.$dirty && this.isFormValid(form);
+                    };
+
+                    this.hasErrors = function (form) {
+                        return this.email != '' && !this.isFormValid(form);
                     };
 
                     this.subscribe = function () {
@@ -37,5 +41,5 @@
             };
         }
     );
-    
+
 })();
