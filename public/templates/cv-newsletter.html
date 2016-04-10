@@ -1,0 +1,19 @@
+<form class="form-inline" name="cvnForm" id="cvnForm" ng-submit="cvn.isFormValid(cvnForm)" novalidate>
+    <div class="form-group form-group-lg">
+        <label class="sr-only" for="email">Email address</label>
+        <input type="email" ng-model="cvn.email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" class="form-control" id="email"
+               placeholder="Email">
+    </div>
+    <div class="form-group form-group-lg">
+        <label class="radio-inline">
+            <input type="radio" name="format" id="formatPdf" value="pdf" checked> PDF
+        </label>
+        <label class="radio-inline">
+            <input type="radio" name="format" id="formatDocx" value="docx"> DOCX
+        </label>
+    </div>
+    <button type="button" class="btn btn-default btn-lg col-md-offset-1" disabled="disabled"
+            ng-disabled="cvn.isFormToDisable()">
+        Sign up
+    </button>
+</form>

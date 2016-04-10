@@ -10,6 +10,7 @@ var paths = {
         public: './public/fonts/vendor'
     },
     js: {
+        angular: './node_modules/angular/angular.js',
         jquery: './vendor/components/jquery/jquery.js',
         bootstrap: './node_modules/bootstrap-sass/assets/javascripts/bootstrap.js',
         scroll: './node_modules/jquery-smooth-scroll/jquery.smooth-scroll.js'
@@ -30,7 +31,7 @@ elixir(function (mix) {
         .copy(paths.sass.fa, paths.sass.vendor + 'font-awesome')
         .sass(['app.scss'])
         .styles([paths.css.animate, paths.css.public])
-        .scripts([paths.js.jquery, paths.js.bootstrap, paths.js.scroll, 'app.js'])
+        .scripts([paths.js.angular, paths.js.jquery, paths.js.bootstrap, paths.js.scroll, 'jquery/app.js', 'angular/app.js'])
         .version([
             elixir.config.get('public.css.outputFolder') + '/all.css',
             elixir.config.get('public.js.outputFolder') + '/all.js'

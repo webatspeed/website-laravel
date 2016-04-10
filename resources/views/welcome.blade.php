@@ -206,21 +206,7 @@
                         You'll never miss skill updates or new availability dates due to the emails we send
                         approximately three times a year.
                     </p>
-                    <form class="form-inline">
-                        <div class="form-group form-group-lg">
-                            <label class="sr-only" for="exampleInputEmail3">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
-                        </div>
-                        <div class="form-group form-group-lg">
-                            <label class="radio-inline">
-                                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> DOCX
-                            </label>
-                            <label class="radio-inline">
-                                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> PDF
-                            </label>
-                        </div>
-                        <button type="button" class="btn btn-default btn-lg col-md-offset-1" disabled="disabled">Sign up</button>
-                    </form>
+                    <cv-newsletter></cv-newsletter>
                 </div>
 
             </div>
