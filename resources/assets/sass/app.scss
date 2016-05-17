@@ -272,12 +272,6 @@ img.circle {
 }
 
 // overriding/extending bootstrap
-.form-group-lg {
-  .radio-inline,
-  .checkbox-inline {
-    padding-left: 45px;
-  }
-}
 .btn-default {
   @include button-variant($btn-success-color, $there-we-could-sail, $there-we-could-sail);
   @include transition(all 0.2s ease-in-out);

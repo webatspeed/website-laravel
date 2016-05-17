@@ -23,6 +23,7 @@
     <link rel="manifest" href="{{ url("img/favicon/manifest.json") }}">
     <link rel="stylesheet" type="text/css" href="{{ elixir("css/all.css") }}">
     <script src="{{ elixir("js/all.js") }}"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
 

@@ -9,30 +9,30 @@
                 controller: function ($http) {
 
                     this.email = '';
-                    this.format = 'pdf';
                     this.status = 'unsubscribed';
+                    this.captchaResponse = '';
 
                     this.isFormValid = function (form) {
-                        return form.$valid;
+                        return form.$valid && this.captchaResponse != '';
                     };
 
                     this.isSuccess = function (form) {
-                        return form.$dirty && this.isFormValid(form);
+                        return form.email.$dirty && form.email.$valid;
                     };
 
                     this.hasErrors = function (form) {
-                        return this.email != '' && !this.isFormValid(form);
+                        return this.email != '' && !form.email.$valid;
                     };
 
                     this.subscribe = function () {
                         var _this = this;
                         var data = $.param({
                             json: JSON.stringify({
-                                name: _this.email,
-                                format: _this.format
+                                'name': _this.email,
+                                'captcha-response': _this.captchaResponse
                             })
                         });
-                        $http.post('/user/subscribe', data).success(function (data, status) {
+                        $http.post('https://www.webatspeed.eu/user/subscribe', data).success(function (data, status) {
                             _this.status = 'unconfirmed';
                         });
                     };
@@ -43,3 +43,10 @@
     );
 
 })();
+
+// Google ReCaptcha callback needs global scope
+function setCaptchaResponse(response) {
+    var scope = angular.element($('#cvnForm')).scope();
+    scope.cvn.captchaResponse = response;
+    scope.$digest();
+}

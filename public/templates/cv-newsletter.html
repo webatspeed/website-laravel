@@ -1,20 +1,30 @@
-<form class="form-inline" name="cvnForm" id="cvnForm" ng-submit="cvn.isFormValid(cvnForm)" novalidate>
+<form class="form-inline" name="cvnForm" id="cvnForm" ng-submit="cvn.isFormValid(cvnForm) && cvn.subscribe()" novalidate>
+    <div class="form-group g-recaptcha" data-callback="setCaptchaResponse"
+         data-sitekey="6Lec8x8TAAAAAGeYf6XG0GkqXlTGDwqOCvkwYjg6"></div>
     <div class="form-group form-group-lg"
          ng-class="{'has-error': cvn.hasErrors(cvnForm), 'has-success': cvn.isSuccess(cvnForm)}">
         <label class="sr-only" for="email">Email address</label>
-        <input type="email" ng-model="cvn.email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" class="form-control" id="email"
-               placeholder="Email" required>
+        <input type="email" ng-model="cvn.email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" class="form-control btn-block"
+               id="email" name="email" placeholder="Email" required>
+        <button type="submit" class="btn btn-default btn-lg btn-block" disabled="disabled"
+                ng-disabled="!cvn.isFormValid(cvnForm)">
+            Sign up
+        </button>
     </div>
-    <div class="form-group form-group-lg">
-        <label class="radio-inline">
-            <input type="radio" name="format" ng-model="cvn.format" id="formatPdf" value="pdf">PDF
-        </label>
-        <label class="radio-inline">
-            <input type="radio" name="format" ng-model="cvn.format" id="formatDocx" value="docx">DOCX
-        </label>
-    </div>
-    <button type="button" class="btn btn-default btn-lg col-md-offset-1" disabled="disabled"
-            ng-disabled="!cvn.isFormValid(cvnForm)">
-        Sign up
-    </button>
+    <p class="bg-primary" ng-show="cvn.isProcessing()">
+        <i class="fa fa-refresh fa-spin"></i>
+        Processing...
+    </p>
+    <p class="bg-warning" ng-hide="true">
+        <i class="fa fa-eye"></i>
+        You successfully signed up. Right after confirmed
+    </p>
+    <p class="bg-success" ng-hide="true">
+        <i class="fa fa-check"></i>
+        Subscribed
+    </p>
+    <p class="bg-danger" ng-hide="true">
+        <i class="fa fa-times"></i>
+        An error occured. Please contact us.
+    </p>
 </form>

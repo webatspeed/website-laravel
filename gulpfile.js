@@ -31,7 +31,7 @@ elixir(function (mix) {
         .copy(paths.sass.fa, paths.sass.vendor + 'font-awesome')
         .sass(['app.scss'])
         .styles([paths.css.animate, paths.css.public])
-        .scripts([paths.js.angular, paths.js.jquery, paths.js.bootstrap, paths.js.scroll, 'jquery/app.js', 'angular/app.js'])
+        .scripts([paths.js.jquery, paths.js.angular, paths.js.bootstrap, paths.js.scroll, 'jquery/app.js', 'angular/app.js'])
         .version([
             elixir.config.get('public.css.outputFolder') + '/all.css',
             elixir.config.get('public.js.outputFolder') + '/all.js'
