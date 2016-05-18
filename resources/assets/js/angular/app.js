@@ -25,7 +25,11 @@
                     this.STATUSES = status;
 
                     this.isFormValid = function (form) {
-                        return form.$valid && this.captchaResponse != '';
+                        return form.$valid && this.isCaptchaDone();
+                    };
+
+                    this.isCaptchaDone = function () {
+                        return this.captchaResponse != '';
                     };
 
                     this.isSuccess = function (form) {
@@ -73,4 +77,5 @@ function setCaptchaResponse(response) {
     var scope = angular.element($('#cvnForm')).scope();
     scope.cvn.captchaResponse = response;
     scope.$digest();
+    $('#email').focus();
 }
