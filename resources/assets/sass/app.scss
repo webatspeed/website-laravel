@@ -271,6 +271,10 @@ img.circle {
   margin-left: 10px;
 }
 
+.form-group.g-recaptcha {
+  vertical-align: top;
+}
+
 // overriding/extending bootstrap
 .btn-default {
   @include button-variant($btn-success-color, $there-we-could-sail, $there-we-could-sail);
@@ -279,4 +283,13 @@ img.circle {
     background-color: $adrift-in-dreams;
     border-color: $adrift-in-dreams;
   }
+}
+
+.bg-primary, .bg-warning, .bg-success, .bg-danger, .bg-info {
+  padding: 10px 15px 10px 15px;
+  max-width: 530px;
+  margin-top: 6px;
+}
+.bg-warning, .bg-success, .bg-danger, .bg-info {
+  color: $gray;
 }
