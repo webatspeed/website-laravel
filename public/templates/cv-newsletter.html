@@ -7,8 +7,8 @@
         <label class="sr-only" for="email">Email address</label>
         <input type="email" ng-model="cvn.email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" class="form-control btn-block"
                ng-disabled="!cvn.isCaptchaDone() || !cvn.isStatus(cvn.STATUSES.UNSUBSCRIBED)" id="email" name="email"
-               required placeholder="Email">
-        <button type="submit" class="btn btn-default btn-lg btn-block" disabled="disabled"
+               required placeholder="Email" tabindex="1">
+        <button type="submit" class="btn btn-default btn-lg btn-block" disabled="disabled" tabindex="2"
                 ng-disabled="!cvn.isFormValid(cvnForm) || !cvn.isStatus(cvn.STATUSES.UNSUBSCRIBED)">
             Sign up
         </button>
