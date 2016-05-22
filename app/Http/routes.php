@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome', ['isHomepage' => true]);
+});
+
+Route::get('/imprint', function () {
+    return view('imprint');
 });

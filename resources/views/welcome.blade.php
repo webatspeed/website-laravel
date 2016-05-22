@@ -2,6 +2,63 @@
 
 @section('title', 'Web at Speed')
 
+@section('nav')
+    @parent
+    <svg class="hidden" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="shape-arrow-down" viewBox="288.1 406.4 19 29">
+            <g>
+                <polygon class="st0" points="297.6,433.9 291.1,427.4 292.6,426 297.6,431 302.6,426 304,427.4"></polygon>
+                <rect x="296.6" y="401" class="st0" width="2" height="30"></rect>
+            </g>
+        </symbol>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="115"
+         viewBox="0 0 150 115" preserveAspectRatio="xMidYMid meet" class="hidden">
+        <g id="shape-arrow-up">
+            <rect id="svgEditorBackground" x="0" y="0" width="150" height="115"></rect>
+            <path d="M7.754236221313477,10.100153923034668a140.25564575195312,140.25564575195312,0,0,1,137.50384521484375,101.00154113769531"
+                  stroke="#CFF09E" id="e5_circleArc"></path>
+            <line id="e6_line" x1="7.75423" y1="9.9229" x2="25.1194" y2="22.8582" stroke="#CFF09E"></line>
+            <line id="e7_line" x1="7.754236347686344" y1="10.100154083204933" x2="28.66332725677725"
+                  y2="1.5947611710323581" stroke="#CFF09E"></line>
+        </g>
+    </svg>
+    <div class="wrap" id="splash">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 animated bounceInDown" id="logo">
+                    {!! Html::image("img/logo_transparent_white.png") !!}
+                </div>
+                <div class="col-md-4 text-left arrow-up animated fadeIn">
+                    <svg>
+                        <use xlink:href="#shape-arrow-up"></use>
+                    </svg>
+                    <br/>
+                <span class="scribbled-note rotate">
+                    A Faster Way for Your<br/>
+                    Web and Mobile Applications
+                </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 animated fadeIn delay-3">
+                    <div class="arrow-down bounce">
+                        <a href="#dev">
+                        <span class="scribbled-note">
+                            scroll down
+                        </span>
+                            <br/>
+                            <svg>
+                                <use xlink:href="#shape-arrow-down"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+@stop
+
 @section('content')
     <div class="wrap" id="dev">
         <div class="container body-content">
