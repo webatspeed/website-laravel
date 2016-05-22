@@ -52,6 +52,7 @@
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
+            <a name="top"></a>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                     data-target="#navbar-collapse" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
@@ -60,7 +61,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#">
-                {!! Html::image("img/logo_transparent.png", 'Web at Speed') !!}
+                {!! Html::image("img/logo_transparent_white.png", 'Web at Speed') !!}
             </a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -108,7 +109,7 @@
     <div class="container text-center">
         <div class="row">
             <div class="col-md-4 col-md-offset-4 animated bounceInDown" id="logo">
-                {!! Html::image("img/logo_transparent.png") !!}
+                {!! Html::image("img/logo_transparent_white.png") !!}
             </div>
             <div class="col-md-4 text-left arrow-up animated fadeIn">
                 <svg>
@@ -145,8 +146,24 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                LOGO
-                <h4>&copy; <?php echo date('Y'); ?> Web at Speed</h4>
+                {!! Html::image("img/logo_transparent_black.png", 'Web at Speed', array('id' => 'footerlogo')) !!}
+            </div>
+            <div class="col-md-4">
+                <h4>Follow Us</h4>
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://www.facebook.com/webatspeed/"><i class="fa fa-facebook-square fa-3x"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/u/0/+WebatspeedCom/about"><i class="fa fa-google-plus-square fa-3x"></i></a>
+                    </li>
+                    <li>
+                        <a href="http://xing.to/webatspeed"><i class="fa fa-xing-square fa-3x"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://de.linkedin.com/in/torstenkrohn"><i class="fa fa-linkedin-square fa-3x"></i></a>
+                    </li>
+                </ul>
             </div>
             <div class="col-md-4">
                 <h4>Contact Us</h4>
@@ -155,31 +172,18 @@
                     <li>torsten.krohn (at) webatspeed.com</li>
                     <li>Tel.: +49 30 84115252</li>
                 </ul>
-                <h4>Follow Us</h4>
-                <ul class="list-inline">
-                    <li>
-                        <a href="#"><i class="fa fa-facebook-square fa-3x"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-google-plus-square fa-3x"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-xing-square fa-3x"></i></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-4">
                 <ul class="list-unstyled">
                     <li>
                         <a href="#">Impressum / Imprint</a>
                     </li>
-                    <li>
-                        <a href="#">Privacy Policy</a>
-                    </li>
                 </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                &copy; 2013-<?php echo date('Y'); ?> Web at Speed. All rights reserved.
                 <a class="btn btn-default pull-right" href="#top" role="button">
                     <i class="fa fa-chevron-up"></i>
-                    top
                 </a>
             </div>
         </div>
