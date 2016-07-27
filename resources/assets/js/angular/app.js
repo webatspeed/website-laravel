@@ -2,8 +2,14 @@
 
 (function () {
 
+    var env = {};
+    if (window) {
+        Object.assign(env, window.env);
+    }
+
     var app = angular.module('app', []);
 
+    app.constant('env', env);
     app.constant('status', {
         UNSUBSCRIBED: 'unsubscribed',
         PROCESSING: 'processing',
@@ -17,7 +23,7 @@
             return {
                 restrict: 'E',
                 templateUrl: '/templates/cv-newsletter.html',
-                controller: function ($http, status) {
+                controller: function ($http, status, env) {
 
                     this.email = '';
                     this.captchaResponse = '';
@@ -53,11 +59,12 @@
                         var _this = this;
                         var data = $.param({
                             json: JSON.stringify({
-                                'name': _this.email,
-                                'captcha-response': _this.captchaResponse
+                                'username': _this.email,
+                                'g-recaptcha-response': _this.captchaResponse,
+                                'remote-ip': '127.0.0.1'
                             })
                         });
-                        $http.post('https://www.webatspeed.eu/user/subscribe', data)
+                        $http.post(env.apiUrl + '/user/subscribe', data.json)
                             .then(function successCallback(response) {
                                 _this.setStatus(status.TO_CONFIRM_BY_USER);
                             }, function errorCallback(response) {

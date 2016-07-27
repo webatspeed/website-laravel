@@ -15,3 +15,4 @@ composer.phar
 /public/js
 /public/fonts/vendor
 /resources/assets/sass/vendor
+/resources/assets/js/vendor

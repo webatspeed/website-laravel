@@ -1,0 +1,8 @@
+'use strict';
+
+(function (window) {
+    window.env = window.env || {};
+    window.env.apiUrl = 'http://localhost:8080';
+    window.env.baseUrl = '/';
+    window.env.enableDebug = true;
+}(this));
