@@ -47,10 +47,6 @@
                         Räumlicher Geltungsbereich: weltweit (ohne USA/CDN)
                     </p>
                     <p>
-                        Dieses Impressum gilt auch für folgende Social Media Profile<br/>
-                        Xing: http://xing.to/webatspeed
-                    </p>
-                    <p>
                         Das Logo von Web at Speed ist eine beim europäischen Harmonisierungsamt für den Binnenmarkt
                         registrierte Gemeinschaftsmarke.
                     </p>
