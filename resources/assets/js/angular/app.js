@@ -57,19 +57,16 @@
 
                     this.subscribe = function () {
                         var _this = this;
-                        var data = $.param({
-                            json: JSON.stringify({
-                                'username': _this.email,
-                                'g-recaptcha-response': _this.captchaResponse,
-                                'remote-ip': '127.0.0.1'
-                            })
-                        });
-                        $http.post(env.apiUrl + '/user/subscribe', data.json)
-                            .then(function successCallback(response) {
+                        $http.post(env.apiUrl + '/api/signup', {
+                            'username': _this.email,
+                            'g-recaptcha-response': _this.captchaResponse,
+                            'remote-ip': '127.0.0.1'
+                        }).then(function successCallback(response) {
                                 _this.setStatus(status.TO_CONFIRM_BY_USER);
                             }, function errorCallback(response) {
                                 _this.setStatus(status.ERROR);
-                            });
+                            }
+                        );
                     };
                 },
                 controllerAs: 'cvn'
