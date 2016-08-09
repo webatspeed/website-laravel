@@ -45,14 +45,5 @@ $(function () {
         }
     });
 
-    // scroll to local anchor even if a query string is given
-    if (location.hash) {
-        var hash = location.hash;
-        if (hash.indexOf('?') > -1) {
-            hash = hash.split('?')[0];
-        }
-        $.smoothScroll({
-            scrollTarget: hash
-        });
-    }
+
 });
