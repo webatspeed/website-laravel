@@ -9,12 +9,21 @@
 
     var app = angular.module('app', []);
 
+    app.config(function ($locationProvider) {
+       $locationProvider.html5Mode({
+           enabled: true,
+           requireBase: false
+       });
+    });
+
     app.constant('env', env);
     app.constant('status', {
         UNSUBSCRIBED: 'unsubscribed',
         PROCESSING: 'processing',
         TO_CONFIRM_BY_USER: 'to-confirm-by-user',
+        CONFIRMING_BY_USER: 'confirming-by-user',
         TO_CONFIRM_BY_OWNER: 'to-confirm-by-owner',
+        CONFIRMING_BY_OWNER: 'confirming-by-owner',
         SUBSCRIBED: 'subscribed',
         ERROR: 'error'
     });
@@ -23,9 +32,10 @@
             return {
                 restrict: 'E',
                 templateUrl: '/templates/cv-newsletter.html',
-                controller: function ($http, status, env) {
+                controller: function ($http, $location, status, env) {
 
                     this.email = '';
+                    this.token = '';
                     this.captchaResponse = '';
                     this.status = status.UNSUBSCRIBED;
                     this.STATUSES = status;
@@ -53,6 +63,15 @@
                     this.setStatus = function (status) {
                         this.status = status;
                         return true;
+                    };
+
+                    this.setStatusByQueryString = function (status) {
+                        var searchVars = $location.search();
+                        if ('user' in searchVars && 'token' in searchVars) {
+                            this.email = searchVars['user'];
+                            this.token = searchVars['token'];
+                            this.status = status;
+                        }
                     };
 
                     this.subscribe = function () {
