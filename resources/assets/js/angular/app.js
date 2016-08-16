@@ -70,8 +70,36 @@
                         if ('user' in searchVars && 'token' in searchVars) {
                             this.email = searchVars['user'];
                             this.token = searchVars['token'];
-                            this.status = status;
+                            this.setStatus(status);
+                            return true;
                         }
+                        return false;
+                    };
+
+                    this.confirm = function () {
+                        var successStatus = this.getNextStatus(this.status);
+                        if (successStatus) {
+                            var _this = this;
+                            $http.post(env.apiUrl + '/api/confirm', {
+                                'username': _this.email,
+                                'token': _this.token
+                            }).then(function successCallback(response) {
+                                    _this.setStatus(successStatus);
+                                }, function errorCallback(response) {
+                                    _this.setStatus(status.ERROR);
+                                }
+                            );
+                        }
+                    };
+
+                    this.getNextStatus = function (currentStatus) {
+                        if (currentStatus == status.CONFIRMING_BY_USER) {
+                            return status.TO_CONFIRM_BY_OWNER;
+                        }
+                        if (currentStatus == status.CONFIRMING_BY_OWNER) {
+                            return status.SUBSCRIBED;
+                        }
+                        return null;
                     };
 
                     this.subscribe = function () {
