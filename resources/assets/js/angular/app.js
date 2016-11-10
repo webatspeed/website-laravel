@@ -10,10 +10,10 @@
     var app = angular.module('app', []);
 
     app.config(function ($locationProvider) {
-       $locationProvider.html5Mode({
-           enabled: true,
-           requireBase: false
-       });
+        $locationProvider.html5Mode({
+            enabled: true,
+            requireBase: false
+        });
     });
 
     app.constant('env', env);
@@ -21,10 +21,10 @@
         UNSUBSCRIBED: 'unsubscribed',
         PROCESSING: 'processing',
         TO_CONFIRM_BY_USER: 'to-confirm-by-user',
-        CONFIRMING_BY_USER: 'confirming-by-user',
+        CONFIRMING: 'confirming',
         TO_CONFIRM_BY_OWNER: 'to-confirm-by-owner',
-        CONFIRMING_BY_OWNER: 'confirming-by-owner',
         SUBSCRIBED: 'subscribed',
+        UNSUBSCRIBING: 'unsubscribing',
         ERROR: 'error'
     });
 
@@ -65,22 +65,31 @@
                         return true;
                     };
 
-                    this.setStatusByQueryString = function (status) {
+                    this.setStatusByQueryString = function () {
                         var searchVars = $location.search();
                         if ('user' in searchVars && 'token' in searchVars) {
                             this.email = searchVars['user'];
                             this.token = searchVars['token'];
-                            this.setStatus(status);
+                            if ('unsubscribe' in searchVars) {
+                                this.setStatus(status.UNSUBSCRIBING);
+                            } else {
+                                this.setStatus(status.CONFIRMING);
+                            }
                             return true;
                         }
                         return false;
                     };
 
-                    this.confirm = function () {
-                        var successStatus = this.getNextStatus(this.status);
+                    this.changeSubscription = function () {
+                        var successStatus, isUnsubscribing;
+                        if (this.status == status.CONFIRMING) {
+                            successStatus = status.TO_CONFIRM_BY_OWNER;
+                        } else if (this.status == status.UNSUBSCRIBING) {
+                            successStatus = status.UNSUBSCRIBED;
+                        }
                         if (successStatus) {
                             var _this = this;
-                            $http.post(env.apiUrl + '/api/confirm', {
+                            $http.put(env.apiUrl + '/api/v1/changesubscription', {
                                 'username': _this.email,
                                 'token': _this.token
                             }).then(function successCallback(response) {
@@ -92,19 +101,9 @@
                         }
                     };
 
-                    this.getNextStatus = function (currentStatus) {
-                        if (currentStatus == status.CONFIRMING_BY_USER) {
-                            return status.TO_CONFIRM_BY_OWNER;
-                        }
-                        if (currentStatus == status.CONFIRMING_BY_OWNER) {
-                            return status.SUBSCRIBED;
-                        }
-                        return null;
-                    };
-
                     this.subscribe = function () {
                         var _this = this;
-                        $http.post(env.apiUrl + '/api/signup', {
+                        $http.post(env.apiUrl + '/api/v1/signup', {
                             'username': _this.email,
                             'g-recaptcha-response': _this.captchaResponse,
                             'remote-ip': '127.0.0.1'
