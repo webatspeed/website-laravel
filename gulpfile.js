@@ -11,6 +11,7 @@ var paths = {
     },
     js: {
         angular: './node_modules/angular/angular.js',
+        cookies: './node_modules/angular-cookies/angular-cookies.js',
         env: elixir.config.get('assets.js.folder') + '/env/',
         jquery: './vendor/components/jquery/jquery.js',
         bootstrap: './node_modules/bootstrap-sass/assets/javascripts/bootstrap.js',
@@ -35,7 +36,7 @@ elixir(function (mix) {
         .sass(['app.scss'])
         .styles([paths.css.animate, paths.css.public])
         .scripts([
-            paths.js.jquery, paths.js.angular, paths.js.bootstrap, paths.js.scroll,
+            paths.js.jquery, paths.js.angular, paths.js.cookies, paths.js.bootstrap, paths.js.scroll,
             'vendor/variables.js', 'jquery/app.js', 'angular/app.js']
         )
         .version([

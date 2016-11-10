@@ -7,7 +7,7 @@
         Object.assign(env, window.env);
     }
 
-    var app = angular.module('app', []);
+    var app = angular.module('app', ['ngCookies']);
 
     app.config(function ($locationProvider) {
         $locationProvider.html5Mode({
@@ -32,7 +32,7 @@
             return {
                 restrict: 'E',
                 templateUrl: '/templates/cv-newsletter.html',
-                controller: function ($http, $location, status, env) {
+                controller: function ($http, $location, $cookies, status, env) {
 
                     this.email = '';
                     this.token = '';
@@ -65,6 +65,23 @@
                         return true;
                     };
 
+                    this.setCookie = function (statusToSet) {
+                        if (statusToSet == status.TO_CONFIRM_BY_OWNER) {
+                            $cookies.put('subscriptionEmail', this.email);
+                        } else if (statusToSet == status.UNSUBSCRIBED) {
+                            $cookies.remove('subscriptionEmail');
+                        }
+                    };
+
+                    this.setStatusByCookie = function () {
+                        var subscriptionEmail = $cookies.get('subscriptionEmail');
+                        if (subscriptionEmail) {
+                            this.email = subscriptionEmail;
+                            this.setStatus(status.SUBSCRIBED);
+                        }
+                        return true;
+                    };
+
                     this.setStatusByQueryString = function () {
                         var searchVars = $location.search();
                         if ('user' in searchVars && 'token' in searchVars) {
@@ -72,16 +89,17 @@
                             this.token = searchVars['token'];
                             if ('unsubscribe' in searchVars) {
                                 this.setStatus(status.UNSUBSCRIBING);
-                            } else {
+                                return true;
+                            } else if (status != status.SUBSCRIBED) {
                                 this.setStatus(status.CONFIRMING);
+                                return true;
                             }
-                            return true;
                         }
                         return false;
                     };
 
                     this.changeSubscription = function () {
-                        var successStatus, isUnsubscribing;
+                        var successStatus;
                         if (this.status == status.CONFIRMING) {
                             successStatus = status.TO_CONFIRM_BY_OWNER;
                         } else if (this.status == status.UNSUBSCRIBING) {
@@ -94,6 +112,7 @@
                                 'token': _this.token
                             }).then(function successCallback(response) {
                                     _this.setStatus(successStatus);
+                                    _this.setCookie(successStatus);
                                 }, function errorCallback(response) {
                                     _this.setStatus(status.ERROR);
                                 }
