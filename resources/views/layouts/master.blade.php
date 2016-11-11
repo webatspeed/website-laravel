@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="app">
 <head>
+    <base href="">
+    <!-- base "/" breaks local linking https://github.com/angular/angular.js/issues/5519 -->
     <title>@yield('title')</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -113,7 +115,7 @@
             <div class="col-md-4">
                 <ul class="list-unstyled">
                     <li>
-                        <a href="/imprint">Impressum / Imprint</a>
+                        <a href="imprint">Impressum / Imprint</a>
                     </li>
                 </ul>
                 <a class="btn btn-default pull-right" href="#top" role="button">

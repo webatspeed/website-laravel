@@ -10,10 +10,7 @@
     var app = angular.module('app', ['ngCookies']);
 
     app.config(function ($locationProvider) {
-        $locationProvider.html5Mode({
-            enabled: true,
-            requireBase: false
-        });
+        $locationProvider.html5Mode(true);
     });
 
     app.constant('env', env);
