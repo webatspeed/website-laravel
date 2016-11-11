@@ -82,27 +82,42 @@
                 <div class="col-lg-12 text-center">
                     <ul class="list-inline tech">
                         <li>
-                            <i class="icon-php hidden"></i>
+                            <i class="icon-php-alt hidden"></i>
 
                             <div class="caption">PHP</div>
                         </li>
                         <li>
-                            <i class="icon-java-bold hidden delay-01"></i>
+                            <i class="icon-symfony hidden delay-01"></i>
+
+                            <div class="caption">Symfony</div>
+                        </li>
+                        <li>
+                            <i class="icon-laravel hidden delay-02"></i>
+
+                            <div class="caption">Laravel</div>
+                        </li>
+                        <li>
+                            <i class="fa fa-coffee hidden delay-03" aria-hidden="true"></i>
 
                             <div class="caption">Java</div>
                         </li>
                         <li>
-                            <i class="icon-grails-alt hidden delay-02"></i>
+                            <i class="icon-grails-alt hidden delay-04"></i>
 
                             <div class="caption">Grails</div>
                         </li>
                         <li>
-                            <i class="fa fa-star-o hidden delay-03"></i>
+                            <i class="fa fa-star hidden delay-05" aria-hidden="true"></i>
 
                             <div class="caption">Groovy</div>
                         </li>
                         <li>
-                            <i class="icon-javascript hidden delay-04"></i>
+                            <i class="fa fa-search hidden delay-06" aria-hidden="true"></i>
+
+                            <div class="caption">Elasticsearch</div>
+                        </li>
+                        <li>
+                            <i class="icon-javascript-alt hidden delay-07"></i>
 
                             <div class="caption">AngularJS</div>
                         </li>

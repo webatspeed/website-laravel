@@ -16,7 +16,7 @@ $(function () {
     $('body').scrollspy({
         // activate navigation bar elements on scrolling
         target: '#navbar',
-        offset: $(window).height() * 0.4
+        offset: $(window).height() * 0.5
 
         // fade in customer bubbles on scrolling in
     }).on('activate.bs.scrollspy', function () {
@@ -26,7 +26,7 @@ $(function () {
                 $('.bubble').addClass('animated fadeInUp').removeClass('hidden');
                 break;
             case '#dev':
-                for (var i = 0; i < 6; i++)
+                for (var i = 0; i < 9; i++)
                     $('.tech li:nth-child(' + i + ') i').addClass('animated fadeInUp').removeClass('hidden');
                 break;
             case '#startup':

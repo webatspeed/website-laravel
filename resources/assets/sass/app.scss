@@ -51,6 +51,18 @@
   @include animation(0.4s, 1s, 1);
 }
 
+.delay-05 {
+  @include animation(0.5s, 1s, 1);
+}
+
+.delay-06 {
+  @include animation(0.6s, 1s, 1);
+}
+
+.delay-07 {
+  @include animation(0.7s, 1s, 1);
+}
+
 .delay-3 {
   @include animation(3s, 2s, 1);
 }
@@ -204,6 +216,10 @@
     padding-left: 5px;
     padding-right: 5px;
 
+    &:first-child i {
+      padding-left: 9px;
+      line-height: 91px;
+    }
     i {
       display: block;
       margin: 0 auto;
