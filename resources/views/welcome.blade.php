@@ -181,7 +181,7 @@
                 </div>
             </div>
             <div class="row bubbles">
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-lg-offset-2">
                     <div class="bubble hidden">
                         Torsten is an allrounder in terms of both front-end and back-end. His analytical skills, even
                         when it comes to highly complex features, are terrific and a great benefit for all IT ventures.
@@ -195,14 +195,9 @@
                         He was always very reliable, fast and produced excellent results.
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="bubble hidden">
-                        Meeting the delivery date and the budget we completely rely on Torsten.
-                    </div>
-                </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 text-center caption">
+                <div class="col-lg-4 col-lg-offset-2 text-center caption">
                     {!! Html::image("img/malte-barth.jpg", 'Malte Barth', array('class' => 'circle')) !!}<br/>
                     Malte Barth<br/>
                     Advisor and Entrepreneur at <a href="http://rwy.be">Runway Capital</a>
@@ -210,41 +205,33 @@
                 <div class="col-lg-4 text-center caption">
                     {!! Html::image("img/lars-fink.jpg", 'Dr. Lars Fink', array('class' => 'circle')) !!}<br/>
                     Dr. Lars Fink<br/>
-                    Founder and Managing Partner at <a href="https://www.nextlevel.de">next level</a>
-                </div>
-                <div class="col-lg-4 text-center caption">
-                    {!! Html::image("img/dennis-kaemker.jpg", 'Dennis Kämker', array('class' => 'circle')) !!}<br/>
-                    Dennis Kämker<br/>
-                    Founder and Managing Partner at <a href="http://www.club-family.de">Club Family</a>
+                    Founder and Managing Partner at <a href="https://www.beesec.de">bee security</a>
                 </div>
             </div>
             <div class="row bubbles">
                 <div class="col-lg-4 col-lg-offset-2">
+                    <div class="bubble hidden">
+                        Meeting the delivery date and the budget we completely rely on Torsten.
+                    </div>
+                </div>
+                <div class="col-lg-4">
                     <div class="bubble hidden">
                         Finally a developer who means 'done' when he says "it's done": not only did it look 'done',
                         it also worked 100% bug-free. And all that after being extraordinary fast - I can
                         enthusiastically recommend Torsten.
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="bubble hidden">
-                        We have successfully worked together with Torsten for the last years. In different
-                        projects he took roles as requirements engineer, software architect or senior
-                        developer.
-                        He was always very reliable, fast and produced excellent results.
-                    </div>
-                </div>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2 text-center caption">
+                    {!! Html::image("img/dennis-kaemker.jpg", 'Dennis Kämker', array('class' => 'circle')) !!}<br/>
+                    Dennis Kämker<br/>
+                    Founder and Managing Partner at <a href="http://www.club-family.de">Club Family</a>
+                </div>
+                <div class="col-lg-4 text-center caption">
                     {!! Html::image("img/andreas-durth.jpg", 'Andreas Durth', array('class' => 'circle')) !!}<br/>
                     Andreas Durth<br/>
                     CMO and Manager at <a href="http://www.studienkreis.de">Studienkreis</a>
-                </div>
-                <div class="col-lg-4 text-center caption">
-                    {!! Html::image("img/mitja-dreu.jpg", 'Mitja Dreu', array('class' => 'circle')) !!}<br/>
-                    Mitja Dreu<br/>
-                    CTO at <a href="http://www.avenso.com">Avenso</a>
                 </div>
             </div>
         </div>
