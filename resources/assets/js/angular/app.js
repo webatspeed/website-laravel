@@ -25,6 +25,7 @@
         TO_CONFIRM_BY_OWNER: 'to-confirm-by-owner',
         SUBSCRIBED: 'subscribed',
         UNSUBSCRIBING: 'unsubscribing',
+        UNSUBSCRIBED_AFTER_SUBSCRIPTION: 'unsubscribed-after-subscription',
         ERROR: 'error'
     });
 
@@ -68,7 +69,7 @@
                     this.setCookie = function (statusToSet) {
                         if (statusToSet == status.TO_CONFIRM_BY_OWNER) {
                             $cookies.put('subscriptionEmail', this.email);
-                        } else if (statusToSet == status.UNSUBSCRIBED) {
+                        } else if (statusToSet == status.UNSUBSCRIBED_AFTER_SUBSCRIPTION) {
                             $cookies.remove('subscriptionEmail');
                         }
                     };
@@ -103,7 +104,7 @@
                         if (this.status == status.CONFIRMING) {
                             successStatus = status.TO_CONFIRM_BY_OWNER;
                         } else if (this.status == status.UNSUBSCRIBING) {
-                            successStatus = status.UNSUBSCRIBED;
+                            successStatus = status.UNSUBSCRIBED_AFTER_SUBSCRIPTION;
                         }
                         if (successStatus) {
                             var _this = this;
