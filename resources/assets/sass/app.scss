@@ -277,8 +277,8 @@ img.circle {
 
 .form-group.g-recaptcha {
   vertical-align: top;
-  -ms-transform: scale(1, 1.25);
-  transform: scale(1, 1.25);
+  -ms-transform: scale(1, 1.1);
+  transform: scale(1, 1.1);
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
 }
@@ -303,4 +303,10 @@ img.circle {
 }
 .bg-warning {
   background-color: $portica;
+}
+.btn-lg {
+  padding: 7px 16px;
+}
+.form-group-lg .form-control {
+  height: 40px;
 }
