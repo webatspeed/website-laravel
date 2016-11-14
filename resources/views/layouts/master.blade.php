@@ -24,6 +24,18 @@
     <link rel="stylesheet" type="text/css" href="{{ elixir("css/all.css") }}">
     <script src="{{ elixir("js/all.js") }}"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-39952419-1', 'auto', {
+            anonymizeIp: true
+        });
+        ga('send', 'pageview');
+
+    </script>
 </head>
 
 <body>
@@ -114,6 +126,9 @@
                 <ul class="list-unstyled">
                     <li>
                         <a href="javascript:window.location.href='/imprint'">Impressum / Imprint</a>
+                    </li>
+                    <li>
+                        <a href="javascript:window.location.href='/imprint'">Datenschutz / Privacy</a>
                     </li>
                 </ul>
                 <a class="btn btn-default pull-right" href="#top" role="button">
