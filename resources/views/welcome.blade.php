@@ -34,10 +34,10 @@
                         <use xlink:href="#shape-arrow-up"></use>
                     </svg>
                     <br/>
-                <span class="scribbled-note rotate">
-                    A Faster Way for Your<br/>
-                    Web and Mobile Applications
-                </span>
+                    <span class="scribbled-note rotate-left">
+                        A Faster Way for Your<br/>
+                        Web and Mobile Applications
+                    </span>
                 </div>
             </div>
             <div class="row">
@@ -259,15 +259,21 @@
                 </div>
                 <div class="col-lg-6 col-lg-offset-6">
                     <h2>Dear Headhunters</h2>
-
                     <p>
                         If your business is searching for IT experts sign up for the CV newsletter.
                         You'll never miss skill updates or new availability dates due to the emails we send
                         approximately three times a year.
                     </p>
                     <cv-newsletter></cv-newsletter>
+                    <span class="scribbled-note rotate-left">
+                        Encrypted connection,<br/>
+                        no spam, sign off<br/>
+                        any time
+                    </span>
+                    <svg>
+                        <use xlink:href="#shape-arrow-up"></use>
+                    </svg>
                 </div>
-
             </div>
         </div>
     </div>
