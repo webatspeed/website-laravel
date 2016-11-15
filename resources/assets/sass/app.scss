@@ -82,6 +82,7 @@
     @include animation(1s, 2s, 1);
 
     svg {
+      stroke: $sunlit-sea;
       width: 150px;
       height: 115px;
     }
@@ -251,8 +252,28 @@
   min-height: 498px;
 }
 
-#usability .container {
-  min-height: 400px;
+#usability {
+  .container {
+    min-height: 400px;
+  }
+  .scribbled-note {
+    margin-top: 85px;
+    margin-right: 30px;
+    float: right;
+    color: $adrift-in-dreams;
+  }
+  svg {
+    position: absolute;
+    right: 80px;
+    margin-top: 30px;
+    stroke: $adrift-in-dreams;
+    width: 150px;
+    height: 40px;
+    -webkit-transform: rotate(-90deg) scale(-1,1);
+    -moz-transform: rotate(-90deg) scale(-1,1);
+    -ms-transform: rotate(-90deg) scale(-1,1);
+    -o-transform: rotate(-90deg) scale(-1,1);
+  }
 }
 
 #headhunters {
@@ -265,6 +286,7 @@
     text-align: center;
   }
   svg {
+    stroke: $sunlit-sea;
     width: 150px;
     height: 95px;
     position: absolute;

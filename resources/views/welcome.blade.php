@@ -17,10 +17,10 @@
         <g id="shape-arrow-up">
             <rect id="svgEditorBackground" x="0" y="0" width="150" height="115"></rect>
             <path d="M7.754236221313477,10.100153923034668a140.25564575195312,140.25564575195312,0,0,1,137.50384521484375,101.00154113769531"
-                  stroke="#CFF09E" id="e5_circleArc"></path>
-            <line id="e6_line" x1="7.75423" y1="9.9229" x2="25.1194" y2="22.8582" stroke="#CFF09E"></line>
+                  id="e5_circleArc"></path>
+            <line id="e6_line" x1="7.75423" y1="9.9229" x2="25.1194" y2="22.8582"></line>
             <line id="e7_line" x1="7.754236347686344" y1="10.100154083204933" x2="28.66332725677725"
-                  y2="1.5947611710323581" stroke="#CFF09E"></line>
+                  y2="1.5947611710323581"></line>
         </g>
     </svg>
     <div class="wrap" id="splash">
@@ -149,7 +149,6 @@
             <div class="row">
                 <div class="col-lg-5">
                     <h2>Usability and Front-Ends</h2>
-
                     <p>
                         Developers are frequently asked this common question, "Do you do front-end or
                         back-end?"
@@ -158,6 +157,12 @@
                         the front-end is the interface to the user. The whole system exists to assist and to
                         extend user-friendliness. That's why no aspect can be neglected.
                     </p>
+                    <svg>
+                        <use xlink:href="#shape-arrow-up"></use>
+                    </svg>
+                    <span class="scribbled-note rotate-left">
+                        Making it shine!
+                    </span>
                 </div>
                 <div class="col-lg-7 text-center frontend hidden">
                     {!! Html::image('img/frontend.svg') !!}
