@@ -126,7 +126,7 @@
                         $http.post(env.apiUrl + '/api/v1/signup', {
                             'username': _this.email,
                             'g-recaptcha-response': _this.captchaResponse,
-                            'remote-ip': '127.0.0.1'
+                            'remote-ip': ip
                         }).then(function successCallback(response) {
                                 _this.setStatus(status.TO_CONFIRM_BY_USER);
                             }, function errorCallback(response) {

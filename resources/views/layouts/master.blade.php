@@ -22,6 +22,15 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ url("img/favicon/favicon-16x16.png") }}">
     <link rel="manifest" href="{{ url("img/favicon/manifest.json") }}">
     <link rel="stylesheet" type="text/css" href="{{ elixir("css/all.css") }}">
+    <script>
+        var ip = '{{ getenv('HTTP_CLIENT_IP')?:
+            getenv('HTTP_X_FORWARDED_FOR')?:
+            getenv('HTTP_X_FORWARDED')?:
+            getenv('HTTP_FORWARDED_FOR')?:
+            getenv('HTTP_FORWARDED')?:
+            getenv('REMOTE_ADDR')?:
+            '127.0.0.1' }}';
+    </script>
     <script src="{{ elixir("js/all.js") }}"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
     <script>
