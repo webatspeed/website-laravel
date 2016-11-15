@@ -292,6 +292,12 @@
                         Well, maybe a princeling at the moment. The company is under development.
                         We promise the result will be worth the anticipation!
                     </p>
+                    <span class="scribbled-note">
+                        At Web at Speed,<br/>we encourage bravery.
+                    </span>
+                    <svg>
+                        <use xlink:href="#shape-arrow-up"></use>
+                    </svg>
                 </div>
             </div>
         </div>

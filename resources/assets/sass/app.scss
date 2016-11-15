@@ -303,6 +303,26 @@
   color: $white;
 }
 
+#contact {
+  .scribbled-note {
+    margin-top: 95px;
+    margin-left: 55px;
+    text-align: right;
+    color: $adrift-in-dreams;
+  }
+  svg {
+    margin-top: 20px;
+    position: absolute;
+    stroke: $adrift-in-dreams;
+    width: 150px;
+    height: 100px;
+    -webkit-transform: rotate(-90deg) scale(-1, -1);
+    -moz-transform: rotate(-90deg) scale(-1, -1);
+    -ms-transform: rotate(-90deg) scale(-1, -1);
+    -o-transform: rotate(-90deg) scale(-1, -1);
+  }
+}
+
 .car {
   position: absolute;
   left: -20px;
