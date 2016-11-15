@@ -57,12 +57,13 @@
                     </h3>
                     <p>
                         Potsdamer Platz: Chris Matzdorf<br/>
-                        Schreibschrift:<br/>
-                        Technik-Icons:<br/>
+                        Schreibschrift: http://bythebutterfly.com<br/>
+                        Technik-Icons 1: http://fizzed.com/oss/font-mfizz<br/>
+                        Technik-Icons 2: http://fontawesome.io<br/>
                         Auto: http://www.istockphoto.com/stock-photo-1060154-fast-even-when-parked.php<br/>
+                        Schreibtisch: http://www.istockphoto.com/vector/workplace-of-designer-in-flat-design-gm472663342-64241541<br/>
                         Geräte: http://www.istockphoto.com/stock-photo-20393527-cloud-computing-concept.php<br/>
-                        Tacho: http://www.istockphoto.com/stock-illustration-20925391-speedometer.php<br/>
-                        Holz: http://www.istockphoto.com/stock-photo-21467764-picnic-table.php<br/>
+                        Unterlagen: https://secure.istockphoto.com/vector/flat-design-vector-concept-for-human-resource-gm505496064-83698429<br/>
                         Firmenschriftzug: http://www.fontsquirrel.com/fonts/disco
                     </p>
                     <h3>Social Media</h3>
