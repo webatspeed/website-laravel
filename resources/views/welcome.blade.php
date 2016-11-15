@@ -266,9 +266,9 @@
                     </p>
                     <cv-newsletter></cv-newsletter>
                     <span class="scribbled-note rotate-left">
-                        Encrypted connection,<br/>
-                        no spam, sign off<br/>
-                        any time
+                        Encrypted Connection,<br/>
+                        No Spam, Sign Off<br/>
+                        Any Time
                     </span>
                     <svg>
                         <use xlink:href="#shape-arrow-up"></use>
