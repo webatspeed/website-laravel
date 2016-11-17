@@ -26,10 +26,10 @@
     <div class="wrap" id="splash">
         <div class="container text-center">
             <div class="row">
-                <div class="col-md-4 col-md-offset-4 animated bounceInDown" id="logo">
+                <div class="col-md-4 col-md-offset-4 shrink-xs animated bounceInDown" id="logo">
                     {!! Html::image("img/logo_transparent_white.png") !!}
                 </div>
-                <div class="col-md-4 text-left arrow-up animated fadeIn">
+                <div class="col-md-4 text-left arrow-up animated fadeIn visible-lg-block">
                     <svg>
                         <use xlink:href="#shape-arrow-up"></use>
                     </svg>
@@ -79,46 +79,122 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-lg-12 text-center visible-md-block visible-lg-block">
                     <ul class="list-inline tech">
                         <li>
                             <i class="icon-php-alt hidden"></i>
-
                             <div class="caption">PHP</div>
                         </li>
                         <li>
                             <i class="icon-symfony hidden delay-01"></i>
-
                             <div class="caption">Symfony</div>
                         </li>
                         <li>
                             <i class="icon-laravel hidden delay-02"></i>
-
                             <div class="caption">Laravel</div>
                         </li>
                         <li>
-                            <i class="fa fa-coffee hidden delay-03" aria-hidden="true"></i>
-
+                            <i class="fa fa-coffee hidden delay-03"></i>
                             <div class="caption">Java</div>
                         </li>
                         <li>
                             <i class="icon-grails-alt hidden delay-04"></i>
-
                             <div class="caption">Grails</div>
                         </li>
                         <li>
-                            <i class="fa fa-star hidden delay-05" aria-hidden="true"></i>
-
+                            <i class="fa fa-star hidden delay-05"></i>
                             <div class="caption">Groovy</div>
                         </li>
                         <li>
-                            <i class="fa fa-search hidden delay-06" aria-hidden="true"></i>
-
+                            <i class="fa fa-search hidden delay-06"></i>
                             <div class="caption">Elasticsearch</div>
                         </li>
                         <li>
                             <i class="icon-javascript-alt hidden delay-07"></i>
-
+                            <div class="caption">AngularJS</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-12 text-center visible-sm-block">
+                    <ul class="list-inline tech">
+                        <li>
+                            <i class="icon-php-alt hidden"></i>
+                            <div class="caption">PHP</div>
+                        </li>
+                        <li>
+                            <i class="icon-symfony hidden delay-01"></i>
+                            <div class="caption">Symfony</div>
+                        </li>
+                        <li>
+                            <i class="icon-laravel hidden delay-02"></i>
+                            <div class="caption">Laravel</div>
+                        </li>
+                        <li>
+                            <i class="fa fa-coffee hidden delay-03"></i>
+                            <div class="caption">Java</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-12 text-center visible-sm-block">
+                    <ul class="list-inline tech">
+                        <li>
+                            <i class="icon-grails-alt hidden delay-04"></i>
+                            <div class="caption">Grails</div>
+                        </li>
+                        <li>
+                            <i class="fa fa-star hidden delay-05"></i>
+                            <div class="caption">Groovy</div>
+                        </li>
+                        <li>
+                            <i class="fa fa-search hidden delay-06"></i>
+                            <div class="caption">Elasticsearch</div>
+                        </li>
+                        <li>
+                            <i class="icon-javascript-alt hidden delay-07"></i>
+                            <div class="caption">AngularJS</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-12 text-center visible-xs-block">
+                    <ul class="list-inline tech">
+                        <li>
+                            <i class="icon-php-alt hidden"></i>
+                            <div class="caption">PHP</div>
+                        </li>
+                        <li>
+                            <i class="icon-symfony hidden delay-01"></i>
+                            <div class="caption">Symfony</div>
+                        </li>
+                        <li>
+                            <i class="icon-laravel hidden delay-02"></i>
+                            <div class="caption">Laravel</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-12 text-center visible-xs-block">
+                    <ul class="list-inline tech">
+                        <li>
+                            <i class="fa fa-coffee hidden delay-03"></i>
+                            <div class="caption">Java</div>
+                        </li>
+                        <li>
+                            <i class="icon-grails-alt hidden delay-04"></i>
+                            <div class="caption">Grails</div>
+                        </li>
+                        <li>
+                            <i class="fa fa-star hidden delay-05"></i>
+                            <div class="caption">Groovy</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-12 text-center visible-xs-block">
+                    <ul class="list-inline tech">
+                        <li>
+                            <i class="fa fa-search hidden delay-06"></i>
+                            <div class="caption">Elasticsearch</div>
+                        </li>
+                        <li>
+                            <i class="icon-javascript-alt hidden delay-07"></i>
                             <div class="caption">AngularJS</div>
                         </li>
                     </ul>
@@ -129,10 +205,10 @@
     <div class="wrap darker" id="startup">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 car hidden">
+                <div class="col-md-12 car hidden">
                     {!! Html::image('img/car.png') !!}
                 </div>
-                <div class="col-lg-5 pull-right">
+                <div class="col-md-5 pull-right">
                     <h2>Initiate Your Startup's Technology</h2>
 
                     <p>
@@ -157,14 +233,14 @@
                         the front-end is the interface to the user. The whole system exists to assist and to
                         extend user-friendliness. That's why no aspect can be neglected.
                     </p>
-                    <svg>
+                    <svg class="hidden-xs">
                         <use xlink:href="#shape-arrow-up"></use>
                     </svg>
-                    <span class="scribbled-note rotate-left">
+                    <span  class="hidden-xs scribbled-note rotate-left">
                         Making it shine!
                     </span>
                 </div>
-                <div class="col-lg-7 text-center frontend hidden">
+                <div class="col-lg-7 text-center frontend shrink-xs hidden">
                     {!! Html::image('img/frontend.svg') !!}
                 </div>
             </div>
@@ -187,7 +263,7 @@
                         saving you time all the while ensuring that the features remain uncompromised.
                     </p>
                 </div>
-                <div class="col-lg-12 text-center computers hidden">
+                <div class="col-lg-12 text-center computers shrink-sm hidden">
                     {!! Html::image('img/computers.svg') !!}
                 </div>
             </div>
@@ -197,61 +273,65 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Customer's Opinion</h2>
+                    <h2>Customers' Opinion</h2>
                 </div>
             </div>
             <div class="row bubbles">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <div class="bubble hidden">
-                        Torsten is an allrounder in terms of both front-end and back-end. His analytical skills, even
-                        when it comes to highly complex features, are terrific and a great benefit for all IT ventures.
+                <div class="col-lg-6">
+                    <div class="bubble-container">
+                        <div class="bubble hidden">
+                            Torsten is an allrounder in terms of both front-end and back-end. His analytical skills, even
+                            when it comes to highly complex features, are terrific and a great benefit for all IT ventures.
+                        </div>
+                    </div>
+                    <div class="text-center caption">
+                        {!! Html::image("img/malte-barth.jpg", 'Malte Barth', array('class' => 'circle')) !!}<br/>
+                        Malte Barth<br/>
+                        Advisor and Entrepreneur at <a href="http://rwy.be">Runway Capital</a>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="bubble hidden">
-                        We have successfully worked together with Torsten for the last years. In different
-                        projects he took roles as requirements engineer, software architect or senior
-                        developer.
-                        He was always very reliable, fast and produced excellent results.
+                <div class="col-lg-6">
+                    <div class="bubble-container">
+                        <div class="bubble hidden">
+                            We have successfully worked together with Torsten for the last years. In different
+                            projects he took roles as requirements engineer, software architect or senior
+                            developer.
+                            He was always very reliable, fast and produced excellent results.
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2 text-center caption">
-                    {!! Html::image("img/malte-barth.jpg", 'Malte Barth', array('class' => 'circle')) !!}<br/>
-                    Malte Barth<br/>
-                    Advisor and Entrepreneur at <a href="http://rwy.be">Runway Capital</a>
-                </div>
-                <div class="col-lg-4 text-center caption">
-                    {!! Html::image("img/lars-fink.jpg", 'Dr. Lars Fink', array('class' => 'circle')) !!}<br/>
-                    Dr. Lars Fink<br/>
-                    Founder and Managing Partner at <a href="https://www.beesec.de">bee security</a>
+                    <div class="text-center caption">
+                        {!! Html::image("img/lars-fink.jpg", 'Dr. Lars Fink', array('class' => 'circle')) !!}<br/>
+                        Dr. Lars Fink<br/>
+                        Founder and Managing Partner at <a href="https://www.beesec.de">bee security</a>
+                    </div>
                 </div>
             </div>
             <div class="row bubbles">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <div class="bubble hidden">
-                        Meeting the delivery date and the budget we completely rely on Torsten.
+                <div class="col-lg-6">
+                    <div class="bubble-container">
+                        <div class="bubble hidden">
+                            Meeting the delivery date and the budget we completely rely on Torsten.
+                        </div>
+                    </div>
+                    <div class="text-center caption">
+                        {!! Html::image("img/dennis-kaemker.jpg", 'Dennis Kämker', array('class' => 'circle')) !!}<br/>
+                        Dennis Kämker<br/>
+                        Founder and Managing Partner at <a href="http://www.club-family.de">Club Family</a>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="bubble hidden">
-                        Finally a developer who means 'done' when he says "it's done": not only did it look 'done',
-                        it also worked 100% bug-free. And all that after being extraordinary fast - I can
-                        enthusiastically recommend Torsten.
+                <div class="col-lg-6">
+                    <div class="bubble-container">
+                        <div class="bubble hidden">
+                            Finally a developer who means 'done' when he says "it's done": not only did it look 'done',
+                            it also worked 100% bug-free. And all that after being extraordinary fast - I can
+                            enthusiastically recommend Torsten.
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2 text-center caption">
-                    {!! Html::image("img/dennis-kaemker.jpg", 'Dennis Kämker', array('class' => 'circle')) !!}<br/>
-                    Dennis Kämker<br/>
-                    Founder and Managing Partner at <a href="http://www.club-family.de">Club Family</a>
-                </div>
-                <div class="col-lg-4 text-center caption">
-                    {!! Html::image("img/andreas-durth.jpg", 'Andreas Durth', array('class' => 'circle')) !!}<br/>
-                    Andreas Durth<br/>
-                    CMO and Manager at <a href="http://www.studienkreis.de">Studienkreis</a>
+                    <div class="text-center caption">
+                        {!! Html::image("img/andreas-durth.jpg", 'Andreas Durth', array('class' => 'circle')) !!}<br/>
+                        Andreas Durth<br/>
+                        CMO and Manager at <a href="http://www.studienkreis.de">Studienkreis</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -259,7 +339,7 @@
     <div class="wrap colorful" id="headhunters">
         <div class="container body-content">
             <div class="row">
-                <div class="col-lg-6 text-center cv hidden">
+                <div class="col-lg-6 text-center cv shrink-xs hidden">
                     {!! Html::image('img/cv.png') !!}
                 </div>
                 <div class="col-lg-6 col-lg-offset-6">
@@ -275,7 +355,7 @@
                         No Spam, Sign Off<br/>
                         Any Time
                     </span>
-                    <svg>
+                    <svg class="hidden-xs">
                         <use xlink:href="#shape-arrow-up"></use>
                     </svg>
                 </div>
@@ -293,9 +373,9 @@
                         We promise the result will be worth the anticipation!
                     </p>
                     <span class="scribbled-note">
-                        At Web at Speed,<br/>we encourage bravery.
+                        At Web at Speed,<br/>we encourage visions.
                     </span>
-                    <svg>
+                    <svg class="hidden-xs">
                         <use xlink:href="#shape-arrow-up"></use>
                     </svg>
                 </div>

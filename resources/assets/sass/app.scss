@@ -153,6 +153,9 @@
 
 .footer {
   background-color: $adrift-in-dreams-light;
+  [class^="col-"] {
+    margin-bottom: 40px;
+  }
 }
 
 #footerlogo {
@@ -164,14 +167,22 @@
   margin-left: -25px;
 }
 
+.bubble-container {
+  min-height: 150px;
+  margin-top: 40px;
+}
+
 .bubbles {
   div:first-child .bubble {
     color: $adrift-in-dreams;
   }
 
   color: $there-we-could-sail;
-  min-height: 200px;
   margin-top: 30px;
+
+  .caption {
+    color: $mine-shaft;
+  }
 
   div:last-child .bubble {
     color: $sea-showing-green;
@@ -245,7 +256,37 @@
 }
 
 #startup {
+  @media (max-width: $screen-sm-max) {
+    height: 600px;
+  }
+  @media (max-width: $screen-xs-max) {
+    height: 700px;
+  }
   height: 500px;
+
+  .car {
+    @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+      left: -120px;
+    }
+    left: -20px;
+    position: absolute;
+    width: 668px;
+    height: 500px;
+    margin-top: -60px;
+
+    img {
+      @media (max-width: $screen-sm-max), (max-width: $screen-xs-max) {
+        height: 300px;
+        position: absolute;
+      }
+      @media (max-width: $screen-sm-max) {
+        bottom: -100px;
+      }
+      @media (max-width: $screen-xs-max) {
+        bottom: -200px;
+      }
+    }
+  }
 }
 
 #devices {
@@ -323,14 +364,6 @@
   }
 }
 
-.car {
-  position: absolute;
-  left: -20px;
-  width: 668px;
-  height: 500px;
-  margin-top: -60px;
-}
-
 img.circle {
   border-radius: 100%;
   border: 1px solid $alto;
@@ -383,9 +416,22 @@ img.circle {
 .bg-warning {
   background-color: $portica;
 }
+
 .btn-lg {
   padding: 7px 16px;
 }
+
 .form-group-lg .form-control {
   height: 40px;
+}
+
+.shrink-xs img {
+  @media (max-width: $screen-xs-min) {
+    width: 100%;
+  }
+}
+.shrink-sm img {
+  @media (max-width: $screen-sm-min) {
+    width: 100%;
+  }
 }

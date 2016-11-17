@@ -62,7 +62,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/#top">
+            <a class="navbar-brand hidden-sm" href="/#top">
                 {!! Html::image("img/logo_transparent_white.png", 'Web at Speed') !!}
             </a>
         </div>
@@ -98,6 +98,8 @@
         <div class="row">
             <div class="col-md-4">
                 {!! Html::image("img/logo_transparent_black.png", 'Web at Speed', array('id' => 'footerlogo')) !!}
+                <br/><br/>
+                &copy; 2013-{{ date('Y') }} Web at Speed. All rights reserved.
             </div>
             <div class="col-md-4">
                 <h4>Follow Us</h4>
@@ -126,13 +128,6 @@
                     <li>torsten.krohn (at) webatspeed.com</li>
                     <li>+49 30 84115252</li>
                 </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-8">
-                &copy; 2013-{{ date('Y') }} Web at Speed. All rights reserved.
-            </div>
-            <div class="col-md-4">
                 <ul class="list-unstyled">
                     <li>
                         <a href="javascript:window.location.href='/imprint'">Impressum / Imprint</a>
