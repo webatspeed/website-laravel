@@ -28,6 +28,10 @@ $font-family-handwriting: 'chocolate-covered-raindrops';
 $font-size-base: 19px;
 $headings-font-weight: 300;
 
+.preload-pixel {
+  opacity: 0;
+  height: 1px;
+}
 
 [data-icon]:before {
   content: attr(data-icon);

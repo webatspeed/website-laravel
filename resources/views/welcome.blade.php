@@ -75,6 +75,7 @@
                         development in the web field ranging from simple support through to overall project
                         management. In addition, this requires a thoughtful choice of technology. We
                         specialize in...
+                        <i class="icon-php-alt preload-pixel"></i>
                     </p>
                 </div>
             </div>
