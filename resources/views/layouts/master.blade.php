@@ -22,7 +22,7 @@
     <link rel="icon" type="image/png" sizes="96x96" href="{{ url("img/favicon/favicon-96x96.png") }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ url("img/favicon/favicon-16x16.png") }}">
     <link rel="manifest" href="{{ url("img/favicon/manifest.json") }}">
-    <link rel="stylesheet" type="text/css" href="{{ elixir("css/all.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ getenv('APP_ENV_CUSTOM') == 'production' ? '/css/all.css' : elixir("css/all.css") }}">
     <script>
         var ip = '{{ getenv('HTTP_CLIENT_IP')?:
             getenv('HTTP_X_FORWARDED_FOR')?:
@@ -32,7 +32,7 @@
             getenv('REMOTE_ADDR')?:
             '127.0.0.1' }}';
     </script>
-    <script src="{{ elixir("js/all.js") }}"></script>
+    <script src="{{ getenv('APP_ENV_CUSTOM') == 'production' ? '/js/all.js' : elixir("js/all.js") }}"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
