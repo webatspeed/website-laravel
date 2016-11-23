@@ -9,12 +9,12 @@
 
     var app = angular.module('app', ['ngCookies']);
 
-    app.config(function ($locationProvider) {
+    app.config(['$locationProvider', function ($locationProvider) {
         $locationProvider.html5Mode({
             enabled: true,
             requireBase: false
         });
-    });
+    }]);
 
     app.constant('env', env);
     app.constant('status', {
@@ -33,7 +33,7 @@
             return {
                 restrict: 'E',
                 templateUrl: '/templates/cv-newsletter.html',
-                controller: function ($http, $location, $cookies, status, env) {
+                controller: [ '$http', '$location', '$cookies', 'status', 'env', function ($http, $location, $cookies, status, env) {
 
                     this.email = '';
                     this.token = '';
@@ -134,7 +134,7 @@
                             }
                         );
                     };
-                },
+                }],
                 controllerAs: 'cvn'
             };
         }
