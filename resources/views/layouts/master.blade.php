@@ -124,7 +124,7 @@
             <div class="col-md-4">
                 <h4>Contact Us</h4>
                 <ul class="list-unstyled">
-                    <li>Web at Speed UG (haftungsbeschränkt)<br/>Thaerstr. 16, 10249 Berlin</li>
+                    <li>Web at Speed GmbH<br/>Rosenfelder Ring 13, 10315 Berlin</li>
                     <li>torsten.krohn (at) webatspeed.com</li>
                     <li>+49 30 84115252</li>
                 </ul>

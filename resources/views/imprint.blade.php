@@ -17,9 +17,9 @@
             <div class="row">
                 <div class="col-lg-12">
                     <p>
-                        Web at Speed UG (haftungsbeschränkt)<br/>
-                        Thaerstr. 16<br/>
-                        10249 Berlin
+                        Web at Speed GmbH<br/>
+                        Rosenfelder Ring 13<br/>
+                        10315 Berlin
                     </p>
                     <p>
                         Vertreten durch<br/>
