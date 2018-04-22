@@ -146,8 +146,7 @@
                         var _this = this;
                         $http.post(env.apiUrl + '/api/v1/signup', {
                             'username': _this.email,
-                            'g-recaptcha-response': _this.captchaResponse,
-                            'remote-ip': ip
+                            'g-recaptcha-response': _this.captchaResponse
                         }).then(function successCallback(response) {
                                 _this.setStatus(status.TO_CONFIRM_BY_USER);
                             }, function errorCallback(response) {
