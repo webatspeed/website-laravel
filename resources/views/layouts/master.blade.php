@@ -23,29 +23,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ url("img/favicon/favicon-16x16.png") }}">
     <link rel="manifest" href="{{ url("img/favicon/manifest.json") }}">
     <link rel="stylesheet" type="text/css" href="{{ getenv('APP_ENV_CUSTOM') == 'production' ? '/css/all.css' : elixir("css/all.css") }}">
-    <script>
-        var ip = '{{ getenv('HTTP_CLIENT_IP')?:
-            getenv('HTTP_X_FORWARDED_FOR')?:
-            getenv('HTTP_X_FORWARDED')?:
-            getenv('HTTP_FORWARDED_FOR')?:
-            getenv('HTTP_FORWARDED')?:
-            getenv('REMOTE_ADDR')?:
-            '127.0.0.1' }}';
-    </script>
     <script src="{{ getenv('APP_ENV_CUSTOM') == 'production' ? '/js/all.js' : elixir("js/all.js") }}"></script>
     <script src='https://www.google.com/recaptcha/api.js' async defer></script>
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-39952419-1', 'auto', {
-            anonymizeIp: true
-        });
-        ga('send', 'pageview');
-
-    </script>
 </head>
 
 <body>
