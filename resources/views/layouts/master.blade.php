@@ -23,6 +23,16 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ url("img/favicon/favicon-16x16.png") }}">
     <link rel="manifest" href="{{ url("img/favicon/manifest.json") }}">
     <link rel="stylesheet" type="text/css" href="{{ getenv('APP_ENV_CUSTOM') == 'production' ? '/css/all.css' : elixir("css/all.css") }}">
+    <script type="text/javascript">
+        window.cookieconsent_options = {
+            "message": "This website uses cookies to ensure you get the best experience on our website",
+            "dismiss": "Got it!",
+            "learnMore": "More info",
+            "link": "/imprint",
+            "theme": "light-bottom"
+        };
+    </script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
     <script src="{{ getenv('APP_ENV_CUSTOM') == 'production' ? '/js/all.js' : elixir("js/all.js") }}"></script>
     <script src='https://www.google.com/recaptcha/api.js' async defer></script>
 </head>
