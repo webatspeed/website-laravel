@@ -76,6 +76,16 @@
                         Xing: xing.to/webatspeed<br/>
                         LinkedIn: linkedin.com/in/torstenkrohn
                     </p>
+                    <h3>
+                        Online-Beilegung von Streitigkeiten
+                    </h3>
+                    <p>
+                        Die EU-Kommission hat eine Internetplattform zur Online-Beilegung von Streitigkeiten
+                        ("OS-Plattform") zwischen Unternehmern und Verbrauchern eingerichtet. Die OS-Plattform ist
+                        erreichbar unter <a href="https://ec.europa.eu/consumers/odr/">https://ec.europa.eu/consumers/odr/</a>.
+                        Wir sind nicht bereit und nicht verpflichtet, an einem Streitbeilegungsverfahren vor einer
+                        Verbraucherschlichtungsstelle teilzunehmen.
+                    </p>
                     <p>
                         Quellverweis: <a href="https://www.ra-plutte.de/impressum-generator/">RA Plutte</a>
                     </p>
@@ -181,17 +191,17 @@
                         Diese Datenschutzerklärung klärt Sie über die Art, den Umfang und Zweck der Verarbeitung von
                         personenbezogenen Daten (nachfolgend kurz "Daten") innerhalb unseres Onlineangebotes und der mit
                         ihm verbundenen Webseiten, Funktionen und Inhalte sowie externen Onlinepräsenzen, wie z.B. unser
-                        Social-Media-Profile auf. (nachfolgend gemeinsam bezeichnet als "Onlineangebot"). Im Hinblick
-                        auf die verwendeten Begrifflichkeiten, wie z.B. "Verarbeitung" oder "Verantwortlicher" verweisen
+                        Social-Media-Profile auf (nachfolgend gemeinsam bezeichnet als "Onlineangebot"). Im Hinblick
+                        auf die verwendeten Begrifflichkeiten, wie z.B. "Verarbeitung" oder "Verantwortlicher", verweisen
                         wir auf die Definitionen im Art. 4 der Datenschutzgrundverordnung (DSGVO).
                     </p>
                     <h3>
                         Arten der verarbeiteten Daten
                     </h3>
                     <ul>
-                        <li>Kontaktdaten (z.B., E-Mail, Telefonnummern)</li>
-                        <li>Nutzungsdaten (z.B., besuchte Webseiten, Interesse an Inhalten, Zugriffszeiten)</li>
-                        <li>Meta-/Kommunikationsdaten (z.B., Geräte-Informationen, IP-Adressen)</li>
+                        <li>Kontaktdaten (z.B. E-Mail, Telefonnummern)</li>
+                        <li>Nutzungsdaten (z.B. besuchte Webseiten, Interesse an Inhalten, Zugriffszeiten)</li>
+                        <li>Meta-/Kommunikationsdaten (z.B. Geräte-Informationen, IP-Adressen)</li>
                     </ul>
                     <h3>
                         Kategorien betroffener Personen
