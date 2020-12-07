@@ -114,9 +114,6 @@
                         <a href="https://www.facebook.com/webatspeed/"><i class="fa fa-facebook-square fa-3x"></i></a>
                     </li>
                     <li>
-                        <a href="https://plus.google.com/u/0/+WebatspeedCom/about"><i class="fa fa-google-plus-square fa-3x"></i></a>
-                    </li>
-                    <li>
                         <a href="https://twitter.com/webatspeed"><i class="fa fa-twitter-square fa-3x"></i></a>
                     </li>
                 </ul>
@@ -126,7 +123,7 @@
                 <ul class="list-unstyled">
                     <li>Web at Speed GmbH<br/>Rosenfelder Ring 13, 10315 Berlin</li>
                     <li>torsten.krohn (at) webatspeed.com</li>
-                    <li>+49 30 84115252</li>
+                    <li>+49 30 91524052</li>
                 </ul>
                 <ul class="list-unstyled">
                     <li>

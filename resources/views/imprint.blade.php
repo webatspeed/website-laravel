@@ -32,7 +32,7 @@
                     </h3>
                     <p>
                         torsten.krohn (at) webatspeed.com<br/>
-                        Tel.: +49 30 84115252
+                        Tel.: +49 30 91524052
                     </p>
                     <p>
                         Registergericht, Registernummer<br/>
@@ -72,7 +72,6 @@
                     <p>
                         Dieses Impressum gilt auch für folgende Social-Media-Profile<br/>
                         Facebook: facebook.com/webatspeed<br/>
-                        G+: plus.google.com/u/0/+WebatspeedCom<br/>
                         Xing: xing.to/webatspeed<br/>
                         LinkedIn: linkedin.com/in/torstenkrohn
                     </p>
